@@ -1,85 +1,78 @@
 /*importez vos Google fonts*/
-@import url('https://fonts.googleapis.com/css?family=Charmonman');
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Charmonman");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
 @font-face {
-	font-family: 'Freestyle Script Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Freestyle Script Regular'), url('FREESCPT.woff') format('woff');
+  font-family: "Freestyle Script Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Freestyle Script Regular"), url("FREESCPT.woff") format("woff");
 }
-
-
 
 /*menu*/
-h1.titre{
-	font-family: 'Amatic SC', cursive;
-	background: #d0d6b5;
-	text-align: center;
-	margin-top: 0;
-	font-size: 200%;
+h1.titre {
+  font-family: "Amatic SC", cursive;
+  background: #d0d6b5;
 }
-
+/*
 #titre {
 	color: black;
 	text-decoration : none;
+}*/
+
+#titre:hover {
+  /*color: rgba(0, 0, 0, 0.5);*/
+  transition-duration: 0.4s;
+}
+/*
+.nav {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  border-style: double double none double;
+  border-width: 4px;
+  border-color: black;
+  padding: 5px 20px 5px 20px;
+  transition-duration: 0.6s;
 }
 
-#titre:hover{
-	color: rgba(0, 0, 0, 0.50);
-	transition-duration: 0.4s;
+.nav:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}*/
+
+header {
+  background: #75b9be;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  border-style: none none double none;
+  border-width: 4px;*/
 }
-
-.nav{
-	color: #000000;
-	text-decoration : none;
-	margin-right: 50px;
-	margin-left: 50px;
-	background-color: white;
-	border-radius: 10px 10px 0 0;
-	border-style: double double none double;
-	border-width: 4px;
-	border-color: black;
-	padding: 5px 20px 5px 20px;
-	transition-duration: 0.6s;
+/*
+#nav {
+  padding-right: 30px;
+  margin-bottom: 0;
 }
-
-.nav:hover{
-	color: white;
-	background-color: black;
-	text-decoration : none;
+*/
+.nav_li {
+  font-family: "Spartan", cursive; /*
+  display: inline;
+  font-size: 150%;*/
 }
-
-
-header{
-	background: #75b9be;
-	position: fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index: 3;
-	border-style: none none double none;
-	border-width: 4px;
+/*
+nav {
+  text-align: center;
 }
-
-
-#nav{
-	padding-right: 30px;
-	margin-bottom: 0;
-}
-
-.nav_li{
-	display: inline;
-	font-size: 150%;
-	font-family: 'Spartan', cursive;
-}
-
-
-nav{
-	text-align: center;
-}
+*/
 
 /*body{
 	background: url("image/fleur_fond4.jpg") no-repeat top right;
@@ -87,468 +80,443 @@ nav{
 
 /*index*/
 
-h1.nom{
-	font-family: 'Amatic SC', cursive;
-	color: white;
-	text-align: center;
-	margin-top: 30%;
-	font-size: 500%;
+h1.nom {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 500%;
 }
 
-.element#index{
-	text-align: center;
+.element#index {
+  text-align: center;
 }
 
-.element#img_index{
-	margin-top: -100px;
-	min-width: 350px;
+.element#img_index {
+  margin-top: -100px;
+  min-width: 350px;
 }
 
-.bouton_projet{
-	margin-top:40%;
+.bouton_projet {
+  margin-top: 40%;
 }
 
 /*a propos*/
 
-.profil{
-	display: flex;
-	margin-top: 145px;
-	height: 350px;
-	background:repeat-x bottom url("image/fond.png");
+.profil {
+  display: flex;
+  margin-top: 145px;
+  height: 350px;
+  background: repeat-x bottom url("image/fond.png");
 }
 
-.photo{
-	min-width: 300px;
+.photo {
+  min-width: 300px;
 }
 
-.element{
-	margin-left: 9%;
-	margin-right: 9%;
+.element {
+  margin-left: 9%;
+  margin-right: 9%;
 }
 
-.ecriture#post{
-	font-size: 250%;
+.ecriture#post {
+  font-size: 250%;
 }
 
-#presentation{
-	width: 600px;
+#presentation {
+  width: 600px;
 }
 
-p.présentation{
-	font-size: 140%;
-	margin-top: 100px;
-	text-align: justify;
-	color: white;
+p.présentation {
+  font-size: 140%;
+  margin-top: 100px;
+  text-align: justify;
+  color: white;
 }
 
-.cv{
-	margin-top: 130px;
-	text-align: center;
+.cv {
+  margin-top: 130px;
+  text-align: center;
 }
 
-p#cv{
-	font-size: 130%;
+p#cv {
+  font-size: 130%;
 }
 
-
-button{
-	font-size: 120%;
-	background-color: #867298;
-	border-radius: 5px;
-	font-family: 'Spartan', cursive;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	padding: 10px 20px;
-	text-align: center;
-	color: white;
-	text-decoration: none;
+button {
+  font-size: 120%;
+  background-color: #867298;
+  border-radius: 5px;
+  font-family: "Spartan", cursive;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
-button:hover{
-	background-color:white;
-	color:black;
-	border: 2px solid #867298;
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #867298;
 }
 
-footer{
-	bottom: 0;
-	left:0;
-	right:0;
-	background: #d0d6b5;
-	width: 100%;
-	height: 30px;
-	position: absolute;
-	text-align: center;
-	font-size: 110%;
-	padding-top: 15px;
-	font-family: 'Spartan', cursive;
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d0d6b5;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  font-size: 110%;
+  padding-top: 15px;
+  font-family: "Spartan", cursive;
 }
 
-.top-footer a{
-	color: #867298;
-	text-decoration: none;
-	font-weight: bold;
-	transition-duration: 0.4s;
+.top-footer a {
+  color: #867298;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.4s;
 }
 
-.top-footer a:hover{
-	color: white;
+.top-footer a:hover {
+  color: white;
 }
-
-
 
 /*projet*/
 
-.container2{
-	padding-bottom: 2%;
-	margin-top: -150px ;
-	background:repeat-x bottom url("image/fond.png");
+.container2 {
+  padding-bottom: 2%;
+  margin-top: -150px;
+  background: repeat-x bottom url("image/fond.png");
 }
 
-.container3{
-	width: 70%;
-	margin-top: 40px;
-	margin-bottom: 60px;
-	margin-left: 13.55%;
+.container3 {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 13.55%;
 }
 
-.container1{
-	width: 70%;
-	margin-left: 13.55%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-
+.container1 {
+  width: 70%;
+  margin-left: 13.55%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.container1-1{
-	background:repeat-x center url("image/fond_violet.png");
-	padding-bottom: 65px;
+.container1-1 {
+  background: repeat-x center url("image/fond_violet.png");
+  padding-bottom: 65px;
 }
 
-
-
-.projets{
-	display: flex;
-	text-align: center;
+.projets {
+  display: flex;
+  text-align: center;
 }
 
 .projet {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  list-style: none;
 }
 
-.projet img.image_projet{
-	transition-duration: 0.3s;
-	min-width: 200px;
+.projet img.image_projet {
+  transition-duration: 0.3s;
+  min-width: 200px;
 }
 
-.projet img.image_projet:hover{
-	cursor: pointer;
-	width: 97%;
-	transition-duration: 0.3s;
+.projet img.image_projet:hover {
+  cursor: pointer;
+  width: 97%;
+  transition-duration: 0.3s;
 }
 
-img{
-	border-radius :8px;
+img {
+  border-radius: 8px;
 }
 
-
-img.mySlides{
-	margin-left: auto;
-	margin-right: auto;
+img.mySlides {
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /*tooltip (vector info)*/
 
 .tooltip {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 50%;
-	font-size: 150%;
-	font-weight: 100;
-	background-color: #ec716a;
-	opacity: 95%;
-	color: white;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px 5px;
-	font-family: 'Spartan', cursive;
+  visibility: hidden;
+  width: 50%;
+  font-size: 150%;
+  font-weight: 100;
+  background-color: #ec716a;
+  opacity: 95%;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-family: "Spartan", cursive;
 
-
-	/* Position the tooltip */
-	position: absolute;
-	margin-top: 80%;
-	margin-left: -30%;
-	z-index: 1;
+  /* Position the tooltip */
+  position: absolute;
+  margin-top: 80%;
+  margin-left: -30%;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-	visibility: visible;
+  visibility: visible;
 }
-
-
 
 /*fenêtre projet*/
 
 /* The Modal (background) */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 4; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-	background-color: #fefefe;
-	margin: 15% auto; /* 15% from the top and centered */
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
-div span{
-	color: #867298;
-	margin-left:37%;
-	font-size: 50px;
-	font-weight: bold;
-	position: absolute;
-	z-index: 3;
+div span {
+  color: #867298;
+  margin-left: 37%;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 3;
 }
 
 div span:hover,
-div span:focus{
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
+div span:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 /*carousel*/
 
 .carousel {
-	margin-top: 20px;
-	height: 200px;
-	/*background-color: #d0d6b5;*/
-	background:repeat-x center url("image/fond_vert.png");
-
+  margin-top: 20px;
+  height: 200px;
+  /*background-color: #d0d6b5;*/
+  background: repeat-x center url("image/fond_vert.png");
 }
 
 .carousel-items {
-	display: flex;
-	overflow-x: scroll;
-	padding: 1rem 0;
-	scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
 }
 
 .carousel-item {
-	flex: 1 0 280px;
-	margin-left: 50px;
-	margin-right: 50px;
-	scroll-snap-align: center;
-	text-align: center;
-	list-style: none;
+  flex: 1 0 280px;
+  margin-left: 50px;
+  margin-right: 50px;
+  scroll-snap-align: center;
+  text-align: center;
+  list-style: none;
 }
 
-
-.carousel-item img.image_projet:hover{
-	cursor: pointer;
-	width: 90%;
+.carousel-item img.image_projet:hover {
+  cursor: pointer;
+  width: 90%;
 }
-
 
 .carousel-items::-webkit-scrollbar-track {
-	background-color: #867298;
-	box-shadow: inset 0 0 5px black;
+  background-color: #867298;
+  box-shadow: inset 0 0 5px black;
 }
 
 .carousel-items::-webkit-scrollbar {
-	height: 20px;
-	width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .carousel-items::-webkit-scrollbar-thumb {
-	background-color: #ee7674;
-	border-radius: 10px;
-	box-shadow: 0px 0px 5px black;
+  background-color: #ee7674;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
 }
-
 
 /* Buttons */
 .carousel-items::-webkit-scrollbar-button:single-button {
-	background-color: #594e69;
-	display: block;
-	border-style: solid;
-	width: 16px;
+  background-color: #594e69;
+  display: block;
+  border-style: solid;
+  width: 16px;
 }
 /* Up */
 .carousel-items::-webkit-scrollbar-button:single-button:horizontal:decrement {
-	border-width: 9px 9px 9px 0;
-	border-color:  transparent #d0d6b5 transparent  transparent;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #d0d6b5 transparent transparent;
 }
 
 .carousel-items::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
-	border-color: transparent #a2a88c transparent transparent;
+  border-color: transparent #a2a88c transparent transparent;
 }
 /* Down */
 .carousel-items::-webkit-scrollbar-button:single-button:horizontal:increment {
-	border-width: 9px 0 9px 9px;
-	border-color:  transparent transparent transparent #d0d6b5;
+  border-width: 9px 0 9px 9px;
+  border-color: transparent transparent transparent #d0d6b5;
 }
 
 .carousel-items::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
-	border-color: transparent transparent transparent #a2a88c;
+  border-color: transparent transparent transparent #a2a88c;
 }
 
 .carousel-items::-webkit-scrollbar-thumb:hover {
-	cursor: pointer;
-	background-color: rgba(238, 118, 116, 0.66);
-	box-shadow: inset 0 0 5px black;
-
+  cursor: pointer;
+  background-color: rgba(238, 118, 116, 0.66);
+  box-shadow: inset 0 0 5px black;
 }
 
-.ecriture{
-	font-family: 'Freestyle Script Regular', cursive;
-	font-size: 200%;
-	margin-top: -23.5%;
-	text-align: center;
+.ecriture {
+  font-family: "Freestyle Script Regular", cursive;
+  font-size: 200%;
+  margin-top: -23.5%;
+  text-align: center;
 }
 
-#bonkoin{
-	color:black;
+#bonkoin {
+  color: black;
 }
 
-#meteo{
-	color:black;
+#meteo {
+  color: black;
 }
-
 
 /*****************************************SLIDER************************************************/
 
-
-
 img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
-h3{
-	font-family: 'Spartan', cursive;
-	font-size: 150%;
-	border-radius: 10px 10px 0 0;
-	border-style: double double none double;
-	border-width: 4px;
-	border-color: black;
-	padding: 5px 20px 5px 20px;
-	margin-left: 15%;
-	margin-bottom: -20px;
-	background-color: white;
-	font-weight: 100;
-	position: absolute;
-	z-index:2;
+h3 {
+  font-family: "Spartan", cursive;
+  font-size: 150%;
+  border-radius: 10px 10px 0 0;
+  border-style: double double none double;
+  border-width: 4px;
+  border-color: black;
+  padding: 5px 20px 5px 20px;
+  margin-left: 15%;
+  margin-bottom: -20px;
+  background-color: white;
+  font-weight: 100;
+  position: absolute;
+  z-index: 2;
 }
 
-.slide img{
-	border-style: double;
-	border-color: black;
-	border-width: 4px;
-	z-index:1;
+.slide img {
+  border-style: double;
+  border-color: black;
+  border-width: 4px;
+  z-index: 1;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .slider {
-	position: relative;
-	padding-top: 63px;
+  position: relative;
+  padding-top: 63px;
 }
 
 /* Hide the images by default */
 .slide {
-	display: none;
+  display: none;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	width: auto;
-	padding: 14px;
-	margin-top: -50px;
-	color: #867298;
-	font-weight: bold;
-	font-size: 200%;
-	border-radius: 4px 0 0 4px;
-	user-select: none;
-	-webkit-user-select: none;
-	margin-left: -40%;
-
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 14px;
+  margin-top: -50px;
+  color: #867298;
+  font-weight: bold;
+  font-size: 200%;
+  border-radius: 4px 0 0 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left: -40%;
 }
 
 /* Position the "next button" to the right */
 .next {
-	right: 0;
-	margin-right: 10%;
-	border-radius: 0 4px 4px 0;
+  right: 0;
+  margin-right: 10%;
+  border-radius: 0 4px 4px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color: rgba(208, 214, 181, 0.8);
+  background-color: rgba(208, 214, 181, 0.8);
 }
-
 
 /* Container for image text */
 .caption-container {
-	text-align: center;
-	margin-top:-45px;
-	margin-bottom:-45px;
-	background-color: #ee7674;
-	color: white;
-	font-family: 'Freestyle Script Regular', cursive;
-	font-size: 300%;
+  text-align: center;
+  margin-top: -45px;
+  margin-bottom: -45px;
+  background-color: #ee7674;
+  color: white;
+  font-family: "Freestyle Script Regular", cursive;
+  font-size: 300%;
 }
 
 .row:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Six columns side by side */
 .column {
-	float: left;
-	width: 16.66%;
+  float: left;
+  width: 16.66%;
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .active,
 .demo:hover {
-	opacity: 1;
+  opacity: 1;
 }
-
-
-
