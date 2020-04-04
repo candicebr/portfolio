@@ -1,687 +1,1143 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
-    <head>
-        <meta charset="utf-8" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="logo.ico"/>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="logo.ico" />
+  </head>
 
-    <body>
-        <header>
-            <a id="titre" href="index.html"> <h1 class="titre">Candice BRANCHEREAU </h1></a>
-            <nav class="menu">
-                <ul id="nav">
-                    <li class="nav_li"><a class="nav" href="works.html">Projets</a></li>
-                    <li class="nav_li"><a class="nav" href="about.html">A propos</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <a id="titre" href="index.html">
+        <h1 class="titre">Candice BRANCHEREAU</h1></a
+      >
+      <nav class="menu">
+        <ul id="nav">
+          <li class="nav_li"><a class="nav" href="works.html">Projets</a></li>
+          <li class="nav_li"><a class="nav" href="about.html">A propos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
+    <main>
+      <div class="fond">
+        <div class="container1-1">
+          <div class="container1">
+            <ul class="projets">
+              <li class="projet">
+                <a
+                  id="bonkoin"
+                  href="https://bonkoin.herokuapp.com"
+                  target="_blank"
+                >
+                  <div class="tooltip">
+                    <img
+                      class="image_projet"
+                      src="css/image/bonkoin.png"
+                      width="100%"
+                      alt="bonkoin"
+                    /><span class="tooltiptext">Voir le site</span>
+                    <p class="ecriture">Web " BonKoin"</p>
+                  </div>
+                </a>
+              </li>
 
-            <div class="fond">
-                <div class="container1-1">
-                    <div class="container1">
+              <li class="projet">
+                <a
+                  id="meteo"
+                  href="https://meteo-app.netlify.com"
+                  target="_blank"
+                >
+                  <div class="tooltip">
+                    <img
+                      class="image_projet"
+                      src="css/image/meteo.png"
+                      width="100%"
+                      alt="meteo"
+                    /><span class="tooltiptext">Voir le site</span>
+                    <p class="ecriture">Web " Météo"</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                        <ul class="projets">
+      <div class="container2">
+        <ul class="projets">
+          <li class="projet">
+            <img
+              class="image_projet"
+              id="personnages_img"
+              src="css/image/personnages3D.png"
+              width="100%"
+            />
+            <p class="ecriture">Infographie 3D</p>
+          </li>
+          <div id="personnages" class="modal">
+            <div class="modal-content">
+              <span class="close_perso">&times;</span>
+              <h3>Mickey</h3>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal_perso = document.getElementById("personnages");
 
-                            <li class="projet">
-                                <a id="bonkoin" href="https://bonkoin.herokuapp.com" target="_blank">
-                                    <div class ="tooltip">
-                                        <img class="image_projet" src="css/image/bonkoin.png" width="100%" alt="bonkoin"/><span class="tooltiptext">Voir le site</span>
-                                        <p class="ecriture">Web " BonKoin"</p>
-                                    </div>
-                                </a>
-                            </li>
+            // Get the button that opens the modal
+            var img_perso = document.getElementById("personnages_img");
 
-                            <li class="projet">
-                                <a id="meteo" href="https://meteo-app.netlify.com" target="_blank">
-                                    <div class ="tooltip">
-                                        <img class="image_projet" src="css/image/meteo.png" width="100%" alt="meteo"/><span class="tooltiptext">Voir le site</span>
-                                        <p class="ecriture">Web " Météo"</p>
-                                    </div>
-                                </a>
-                            </li>
+            // Get the <span> element that closes the modal
+            var span_perso = document.getElementsByClassName("close_perso")[0];
 
-                        </ul>
-                    </div>
+            // When the user clicks the button, open the modal
+            img_perso.onclick = function() {
+              modal_perso.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_perso.onclick = function() {
+              modal_perso.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_perso) {
+                modal_perso.style.display = "none";
+              }
+            };
+          </script>
+
+          <li class="projet">
+            <img
+              class="image_projet"
+              id="feng_shui_img"
+              src="css/image/feng_shui.png"
+              width="100%"
+            />
+            <p class="ecriture">Meubles 3D Feng Shui</p>
+          </li>
+
+          <div id="feng_shui" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3>Projet de groupe : Aménagement Feng Shui</h3>
+              <div class="slider">
+                <div class="slide meuble">
+                  <img src="css/image/meuble_bureau.png" style="width:65%" />
                 </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/fauteuil.png" style="width:65%" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/lit.png" style="width:65%" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/tables.png" style="width:65%" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/lavabo.png" style="width:65%" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/baignoire.png" style="width:65%" />
+                </div>
+
+                <a class="prev" onclick="plusSlidesMeuble(-1)">❮</a>
+                <a class="next" onclick="plusSlidesMeuble(1)">❯</a>
+
+                <div class="caption-container">
+                  <p id="caption meuble">meuble</p>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/meuble_bureau.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(1)"
+                      alt="Meuble de bureau"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/fauteuil.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(2)"
+                      alt="Fauteuil"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/lit.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(3)"
+                      alt="Lit"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/tables.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(4)"
+                      alt="Tables basses"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/lavabo.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(5)"
+                      alt="Lavabo"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/baignoire.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(6)"
+                      alt="Baignoire"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                var slideIndexMeuble = 1;
+                showSlidesMeuble(slideIndexMeuble);
+
+                function plusSlidesMeuble(n) {
+                  showSlidesMeuble((slideIndexMeuble += n));
+                }
+
+                function currentSlideMeuble(n) {
+                  showSlidesMeuble((slideIndexMeuble = n));
+                }
+
+                function showSlidesMeuble(n) {
+                  var i;
+                  var slides_meuble = document.getElementsByClassName(
+                    "slide meuble"
+                  );
+                  var dots_meuble = document.getElementsByClassName(
+                    "demo meuble"
+                  );
+                  var captionText_meuble = document.getElementById(
+                    "caption meuble"
+                  );
+                  if (n > slides_meuble.length) {
+                    slideIndexMeuble = 1;
+                  }
+                  if (n < 1) {
+                    slideIndexMeuble = slides_meuble.length;
+                  }
+                  for (i = 0; i < slides_meuble.length; i++) {
+                    slides_meuble[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots_meuble.length; i++) {
+                    dots_meuble[i].className = dots_meuble[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  slides_meuble[slideIndexMeuble - 1].style.display = "block";
+                  dots_meuble[slideIndexMeuble - 1].className += " active";
+                  captionText_meuble.innerHTML =
+                    dots_meuble[slideIndexMeuble - 1].alt;
+                }
+              </script>
             </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("feng_shui");
 
+            // Get the button that opens the modal
+            var img = document.getElementById("feng_shui_img");
 
-            <div class="container2">
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
-                <ul class="projets">
+            // When the user clicks the button, open the modal
+            img.onclick = function() {
+              modal.style.display = "block";
+            };
 
-                    <li class="projet">
-                        <img class="image_projet" id="personnages_img" src="css/image/personnages3D.png" width="100%"/>
-                        <p class="ecriture">Infographie 3D</p>
-                    </li>
-                    <div id="personnages" class="modal">
-                        <div class="modal-content">
-                            <span class="close_perso">&times;</span>
-                            <h3>Mickey</h3>
-                        </div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal_perso = document.getElementById("personnages");
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            };
 
-                        // Get the button that opens the modal
-                        var img_perso = document.getElementById("personnages_img");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
 
-                        // Get the <span> element that closes the modal
-                        var span_perso = document.getElementsByClassName("close_perso")[0];
+          <li class="projet">
+            <img
+              class="image_projet"
+              id="magic_journey_img"
+              src="css/image/the_magic_journey.png"
+              width="100%"
+            />
+            <p class="ecriture">The Magic Journey</p>
+          </li>
+          <div id="magic_journey" class="modal">
+            <div class="modal-content">
+              <span class="close_magic">&times;</span>
+              <div class="sous_titre">
+                <h3>Projet de groupe: Décors d'un jeu</h3>
+              </div>
 
-                        // When the user clicks the button, open the modal
-                        img_perso.onclick = function() {
-                            modal_perso.style.display = "block";
-                        }
+              <div class="slider">
+                <div class="slide magic">
+                  <img src="css/image/ponton.png" style="width:65%" />
+                </div>
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_perso.onclick = function() {
-                            modal_perso.style.display = "none";
-                        }
+                <div class="slide magic">
+                  <img src="css/image/tonneau.png" style="width:65%" />
+                </div>
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_perso) {
-                                modal_perso.style.display = "none";
-                            }
-                        }
-                    </script>
+                <div class="slide magic">
+                  <img src="css/image/brouette.png" style="width:65%" />
+                </div>
 
+                <div class="slide magic">
+                  <img src="css/image/meuble_cave.png" style="width:65%" />
+                </div>
 
-                    <li class="projet">
-                        <img class="image_projet" id="feng_shui_img" src="css/image/feng_shui.png" width="100%"/>
-                        <p class="ecriture">Meubles 3D Feng Shui</p>
-                    </li>
+                <div class="slide magic">
+                  <img src="css/image/bibliotheque.png" style="width:65%" />
+                </div>
 
-                    <div id="feng_shui" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Projet de groupe : Aménagement Feng Shui</h3>
-                            <div class="slider">
-                                <div class="slide meuble">
-                                    <img src="css/image/meuble_bureau.png" style="width:65%">
-                                </div>
+                <div class="slide magic">
+                  <img src="css/image/porte_chateau.png" style="width:65%" />
+                </div>
 
-                                <div class="slide meuble">
-                                    <img src="css/image/fauteuil.png" style="width:65%">
-                                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
 
-                                <div class="slide meuble">
-                                    <img src="css/image/lit.png" style="width:65%">
-                                </div>
+                <div class="caption-container">
+                  <p id="caption">décors</p>
+                </div>
 
-                                <div class="slide meuble">
-                                    <img src="css/image/tables.png" style="width:65%">
-                                </div>
+                <div class="row">
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/ponton.png"
+                      style="width:100%"
+                      onclick="currentSlide(1)"
+                      alt="Ponton"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/tonneau.png"
+                      style="width:100%"
+                      onclick="currentSlide(2)"
+                      alt="Tonneau"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/brouette.png"
+                      style="width:100%"
+                      onclick="currentSlide(3)"
+                      alt="Brouette"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/meuble_cave.png"
+                      style="width:100%"
+                      onclick="currentSlide(4)"
+                      alt="Meuble"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/bibliotheque.png"
+                      style="width:100%"
+                      onclick="currentSlide(5)"
+                      alt="Bibliothèque"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/porte_chateau.png"
+                      style="width:100%"
+                      onclick="currentSlide(6)"
+                      alt="Entrée de château"
+                    />
+                  </div>
+                </div>
+              </div>
 
-                                <div class="slide meuble">
-                                    <img src="css/image/lavabo.png" style="width:65%">
-                                </div>
+              <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
 
-                                <div class="slide meuble">
-                                    <img src="css/image/baignoire.png" style="width:65%">
-                                </div>
+                function plusSlides(n) {
+                  showSlides((slideIndex += n));
+                }
 
-                                <a class="prev" onclick="plusSlidesMeuble(-1)">❮</a>
-                                <a class="next" onclick="plusSlidesMeuble(1)">❯</a>
+                function currentSlide(n) {
+                  showSlides((slideIndex = n));
+                }
 
-                                <div class="caption-container">
-                                    <p id="caption meuble">meuble</p>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/meuble_bureau.png" style="width:100%" onclick="currentSlideMeuble(1)" alt="Meuble de bureau">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/fauteuil.png" style="width:100%" onclick="currentSlideMeuble(2)" alt="Fauteuil">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/lit.png" style="width:100%" onclick="currentSlideMeuble(3)" alt="Lit">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/tables.png" style="width:100%" onclick="currentSlideMeuble(4)" alt="Tables basses">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/lavabo.png" style="width:100%" onclick="currentSlideMeuble(5)" alt="Lavabo">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo meuble cursor" src="css/image/baignoire.png" style="width:100%" onclick="currentSlideMeuble(6)" alt="Baignoire">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <script>
-                                var slideIndexMeuble = 1;
-                                showSlidesMeuble(slideIndexMeuble);
-
-                                function plusSlidesMeuble(n) {
-                                    showSlidesMeuble(slideIndexMeuble += n);
-                                }
-
-                                function currentSlideMeuble(n) {
-                                    showSlidesMeuble(slideIndexMeuble = n);
-                                }
-
-                                function showSlidesMeuble(n) {
-                                    var i;
-                                    var slides_meuble= document.getElementsByClassName("slide meuble");
-                                    var dots_meuble = document.getElementsByClassName("demo meuble");
-                                    var captionText_meuble = document.getElementById("caption meuble");
-                                    if (n > slides_meuble.length) {slideIndexMeuble = 1}
-                                    if (n < 1) {slideIndexMeuble = slides_meuble.length}
-                                    for (i = 0; i < slides_meuble.length; i++) {
-                                        slides_meuble[i].style.display = "none";
-                                    }
-                                    for (i = 0; i < dots_meuble.length; i++) {
-                                        dots_meuble[i].className = dots_meuble[i].className.replace(" active", "");
-                                    }
-                                    slides_meuble[slideIndexMeuble-1].style.display = "block";
-                                    dots_meuble[slideIndexMeuble-1].className += " active";
-                                    captionText_meuble.innerHTML = dots_meuble[slideIndexMeuble-1].alt;
-                                }
-                            </script>
-
-                        </div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById("feng_shui");
-
-                        // Get the button that opens the modal
-                        var img = document.getElementById("feng_shui_img");
-
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
-
-                        // When the user clicks the button, open the modal
-                        img.onclick = function() {
-                            modal.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() {
-                            modal.style.display = "none";
-                        }
-
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-                    </script>
-
-                    <li class="projet">
-                        <img class="image_projet" id="magic_journey_img" src="css/image/the_magic_journey.png" width="100%"/>
-                        <p class="ecriture">The Magic Journey</p>
-                    </li>
-                    <div id="magic_journey" class="modal">
-                        <div class="modal-content">
-                            <span class="close_magic">&times;</span>
-                            <div class="sous_titre">
-                                <h3>Projet de groupe: Décors d'un jeu</h3>
-                            </div>
-
-                            <div class="slider">
-                                <div class="slide magic">
-                                    <img src="css/image/ponton.png" style="width:65%">
-                                </div>
-
-                                <div class="slide magic">
-                                    <img src="css/image/tonneau.png" style="width:65%">
-                                </div>
-
-                                <div class="slide magic">
-                                    <img src="css/image/brouette.png" style="width:65%">
-                                </div>
-
-                                <div class="slide magic">
-                                    <img src="css/image/meuble_cave.png" style="width:65%">
-                                </div>
-
-                                <div class="slide magic">
-                                    <img src="css/image/bibliotheque.png" style="width:65%">
-                                </div>
-
-                                <div class="slide magic">
-                                    <img src="css/image/porte_chateau.png" style="width:65%">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                <a class="next" onclick="plusSlides(1)">❯</a>
-
-                                <div class="caption-container">
-                                    <p id="caption">décors</p>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/ponton.png" style="width:100%" onclick="currentSlide(1)" alt="Ponton">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/tonneau.png" style="width:100%" onclick="currentSlide(2)" alt="Tonneau">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/brouette.png" style="width:100%" onclick="currentSlide(3)" alt="Brouette">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/meuble_cave.png" style="width:100%" onclick="currentSlide(4)" alt="Meuble">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/bibliotheque.png" style="width:100%" onclick="currentSlide(5)" alt="Bibliothèque">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo magic cursor" src="css/image/porte_chateau.png" style="width:100%" onclick="currentSlide(6)" alt="Entrée de château">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <script>
-                                var slideIndex = 1;
-                                showSlides(slideIndex);
-
-                                function plusSlides(n) {
-                                    showSlides(slideIndex += n);
-                                }
-
-                                function currentSlide(n) {
-                                    showSlides(slideIndex = n);
-                                }
-
-                                function showSlides(n) {
-                                    var i;
-                                    var slides = document.getElementsByClassName("slide magic");
-                                    var dots = document.getElementsByClassName("demo magic");
-                                    var captionText = document.getElementById("caption");
-                                    if (n > slides.length) {slideIndex = 1}
-                                    if (n < 1) {slideIndex = slides.length}
-                                    for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                                    }
-                                    for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                                    }
-                                    slides[slideIndex-1].style.display = "block";
-                                    dots[slideIndex-1].className += " active";
-                                    captionText.innerHTML = dots[slideIndex-1].alt;
-                                }
-                            </script>
-                        </div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal_magic = document.getElementById("magic_journey");
-
-                        // Get the button that opens the modal
-                        var img_magic = document.getElementById("magic_journey_img");
-
-                        // Get the <span> element that closes the modal
-                        var span_magic = document.getElementsByClassName("close_magic")[0];
-
-                        // When the user clicks the button, open the modal
-                        img_magic.onclick = function() {
-                            modal_magic.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        span_magic.onclick = function() {
-                            modal_magic.style.display = "none";
-                        }
-
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_magic) {
-                                modal_magic.style.display = "none";
-                            }
-                        }
-                    </script>
-
-                </ul>
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("slide magic");
+                  var dots = document.getElementsByClassName("demo magic");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) {
+                    slideIndex = 1;
+                  }
+                  if (n < 1) {
+                    slideIndex = slides.length;
+                  }
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(
+                      " active",
+                      ""
+                    );
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+              </script>
             </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal_magic = document.getElementById("magic_journey");
 
-            <div class="container3">
+            // Get the button that opens the modal
+            var img_magic = document.getElementById("magic_journey_img");
 
-                <ul class="projets">
+            // Get the <span> element that closes the modal
+            var span_magic = document.getElementsByClassName("close_magic")[0];
 
-                    <li class="projet">
-                        <img class="image_projet" id="jeu_img" src="css/image/jeu2D.png" width="100%"/>
-                        <p class="ecriture">Jeu 2D</p>
-                    </li>
+            // When the user clicks the button, open the modal
+            img_magic.onclick = function() {
+              modal_magic.style.display = "block";
+            };
 
-                    <div id="jeu" class="modal">
-                        <div class="modal-content">
-                            <span class="close_jeu">&times;</span>
-                            <h3>Développement platformer 2D</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jcueBFEV8BM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-top:67px"></iframe>
-                        </div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal_jeu = document.getElementById("jeu");
+            // When the user clicks on <span> (x), close the modal
+            span_magic.onclick = function() {
+              modal_magic.style.display = "none";
+            };
 
-                        // Get the button that opens the modal
-                        var img_jeu = document.getElementById("jeu_img");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_magic) {
+                modal_magic.style.display = "none";
+              }
+            };
+          </script>
+        </ul>
+      </div>
 
-                        // Get the <span> element that closes the modal
-                        var span_jeu = document.getElementsByClassName("close_jeu")[0];
+      <div class="container3">
+        <ul class="projets">
+          <li class="projet">
+            <img
+              class="image_projet"
+              id="jeu_img"
+              src="css/image/jeu2D.png"
+              width="100%"
+            />
+            <p class="ecriture">Jeu 2D</p>
+          </li>
 
-                        // When the user clicks the button, open the modal
-                        img_jeu.onclick = function() {
-                            modal_jeu.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        span_jeu.onclick = function() {
-                            modal_jeu.style.display = "none";
-                        }
-
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_jeu) {
-                                modal_jeu.style.display = "none";
-                            }
-                        }
-                    </script>
-
-                    <li class="projet">
-                        <img class="image_projet" id="jeu2_img" src="css/image/jeu3D.png" width="100%"/>
-                        <p class="ecriture">Jeu 3D</p>
-                    </li>
-
-
-                </ul>
+          <div id="jeu" class="modal">
+            <div class="modal-content">
+              <span class="close_jeu">&times;</span>
+              <h3>Développement platformer 2D</h3>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jcueBFEV8BM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="margin-top:67px"
+              ></iframe>
             </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal_jeu = document.getElementById("jeu");
 
-            <section class="carousel">
-                <ul class="carousel-items">
+            // Get the button that opens the modal
+            var img_jeu = document.getElementById("jeu_img");
 
-                    <li class="carousel-item">
-                        <img src="css/image/infographie2D.png" width="100%"/>
-                        <p class="ecriture">Infographie 2D</p>
-                    </li>
+            // Get the <span> element that closes the modal
+            var span_jeu = document.getElementsByClassName("close_jeu")[0];
 
-                    <li class="carousel-item">
-                            <img class="image_projet" id="aquarelle_img" src="css/image/aquarelle.png" width="100%"/>
-                        <p class="ecriture">Aquarelle</p>
-                    </li>
+            // When the user clicks the button, open the modal
+            img_jeu.onclick = function() {
+              modal_jeu.style.display = "block";
+            };
 
-                    <div id="aquarelle" class="modal">
-                        <div class="modal-content">
-                            <span class="close_aquarelle">&times;</span>
+            // When the user clicks on <span> (x), close the modal
+            span_jeu.onclick = function() {
+              modal_jeu.style.display = "none";
+            };
 
-                            <img src='css/image/oiseau.png' width=30% height=30% alt="oiseau">
-                            <img src='css/image/lac.png' width=30% height=30% alt="eau">
-                            <img src='css/image/lapin.png' width=30% height=30% alt="lapin">
-                            <img src='css/image/monstre.png' width=30% height=30% alt="monstre">
-                            <img src='css/image/loup.png' width=30% height=30% alt="loup">
-                            <img src='css/image/tortue.png' width=30% height=30% alt="tortue">
-                            <img src='css/image/sapin.png' width=30% height=30% alt="montagne">
-                        </div>
-                    </div>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_jeu) {
+                modal_jeu.style.display = "none";
+              }
+            };
+          </script>
 
-                    <script>
-                        // Get the modal
-                        var modal_aquarelle = document.getElementById("aquarelle");
+          <li class="projet">
+            <img
+              class="image_projet"
+              id="jeu2_img"
+              src="css/image/jeu3D.png"
+              width="100%"
+            />
+            <p class="ecriture">Jeu 3D</p>
+          </li>
+        </ul>
+      </div>
 
-                        // Get the button that opens the modal
-                        var img_aquarelle  = document.getElementById("aquarelle_img");
+      <section class="carousel">
+        <ul class="carousel-items">
+          <li class="carousel-item">
+            <img src="css/image/infographie2D.png" width="100%" />
+            <p class="ecriture">Infographie 2D</p>
+          </li>
 
-                        // Get the <span> element that closes the modal
-                        var span_aquarelle  = document.getElementsByClassName("close_aquarelle")[0];
+          <li class="carousel-item">
+            <img
+              class="image_projet"
+              id="aquarelle_img"
+              src="css/image/aquarelle.png"
+              width="100%"
+            />
+            <p class="ecriture">Aquarelle</p>
+          </li>
 
-                        // When the user clicks the button, open the modal
-                        img_aquarelle .onclick = function() {
-                            modal_aquarelle .style.display = "block";
-                        }
+          <div id="aquarelle" class="modal">
+            <div class="modal-content">
+              <span class="close_aquarelle">&times;</span>
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_aquarelle .onclick = function() {
-                            modal_aquarelle .style.display = "none";
-                        }
+              <img
+                src="css/image/oiseau.png"
+                width="30%"
+                height="30%"
+                alt="oiseau"
+              />
+              <img src="css/image/lac.png" width="30%" height="30%" alt="eau" />
+              <img
+                src="css/image/lapin.png"
+                width="30%"
+                height="30%"
+                alt="lapin"
+              />
+              <img
+                src="css/image/monstre.png"
+                width="30%"
+                height="30%"
+                alt="monstre"
+              />
+              <img
+                src="css/image/loup.png"
+                width="30%"
+                height="30%"
+                alt="loup"
+              />
+              <img
+                src="css/image/tortue.png"
+                width="30%"
+                height="30%"
+                alt="tortue"
+              />
+              <img
+                src="css/image/sapin.png"
+                width="30%"
+                height="30%"
+                alt="montagne"
+              />
+            </div>
+          </div>
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_aquarelle ) {
-                                modal_aquarelle .style.display = "none";
-                            }
-                        }
-                    </script>
+          <script>
+            // Get the modal
+            var modal_aquarelle = document.getElementById("aquarelle");
 
-                    <li class="carousel-item">
-                        <img class="image_projet" id="pastel_img" src="css/image/pastel.png" width="100%"/>
-                        <p class="ecriture">Pastel</p>
-                    </li>
+            // Get the button that opens the modal
+            var img_aquarelle = document.getElementById("aquarelle_img");
 
-                    <div id="pastel" class="modal">
-                        <div class="modal-content">
-                            <span class="close_pastel">&times;</span>
-                            <img src='css/image/samourai2.png' width=30% height=30% alt="samourai">
-                            <img src='css/image/lion2.png' width=30% height=30% alt="lion">
-                            <img src='css/image/dragon.png' width=30% height=30% alt="dragon">
-                            <img src='css/image/lion.png' width=30% height=30% alt="lion">
-                            <img src='css/image/route.png' width=30% height=30% alt="route">
-                            <img src='css/image/fille.png' width=30% height=30% alt="fille">
+            // Get the <span> element that closes the modal
+            var span_aquarelle = document.getElementsByClassName(
+              "close_aquarelle"
+            )[0];
 
+            // When the user clicks the button, open the modal
+            img_aquarelle.onclick = function() {
+              modal_aquarelle.style.display = "block";
+            };
 
-                        </div>
-                    </div>
+            // When the user clicks on <span> (x), close the modal
+            span_aquarelle.onclick = function() {
+              modal_aquarelle.style.display = "none";
+            };
 
-                    <script>
-                        // Get the modal
-                        var modal_pastel = document.getElementById("pastel");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_aquarelle) {
+                modal_aquarelle.style.display = "none";
+              }
+            };
+          </script>
 
-                        // Get the button that opens the modal
-                        var img_pastel = document.getElementById("pastel_img");
+          <li class="carousel-item">
+            <img
+              class="image_projet"
+              id="pastel_img"
+              src="css/image/pastel.png"
+              width="100%"
+            />
+            <p class="ecriture">Pastel</p>
+          </li>
 
-                        // Get the <span> element that closes the modal
-                        var span_pastel = document.getElementsByClassName("close_pastel")[0];
+          <div id="pastel" class="modal">
+            <div class="modal-content">
+              <span class="close_pastel">&times;</span>
+              <img
+                src="css/image/samourai2.png"
+                width="30%"
+                height="30%"
+                alt="samourai"
+              />
+              <img
+                src="css/image/lion2.png"
+                width="30%"
+                height="30%"
+                alt="lion"
+              />
+              <img
+                src="css/image/dragon.png"
+                width="30%"
+                height="30%"
+                alt="dragon"
+              />
+              <img
+                src="css/image/lion.png"
+                width="30%"
+                height="30%"
+                alt="lion"
+              />
+              <img
+                src="css/image/route.png"
+                width="30%"
+                height="30%"
+                alt="route"
+              />
+              <img
+                src="css/image/fille.png"
+                width="30%"
+                height="30%"
+                alt="fille"
+              />
+            </div>
+          </div>
 
-                        // When the user clicks the button, open the modal
-                        img_pastel.onclick = function() {
-                            modal_pastel.style.display = "block";
-                        }
+          <script>
+            // Get the modal
+            var modal_pastel = document.getElementById("pastel");
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_pastel.onclick = function() {
-                            modal_pastel.style.display = "none";
-                        }
+            // Get the button that opens the modal
+            var img_pastel = document.getElementById("pastel_img");
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_pastel) {
-                                modal_pastel.style.display = "none";
-                            }
-                        }
-                    </script>
+            // Get the <span> element that closes the modal
+            var span_pastel = document.getElementsByClassName(
+              "close_pastel"
+            )[0];
 
-                    <li class="carousel-item">
-                        <img class="image_projet" id="marker_img" src="css/image/marker.png" width="100%"/>
-                        <p class="ecriture">Marker</p>
-                    </li>
+            // When the user clicks the button, open the modal
+            img_pastel.onclick = function() {
+              modal_pastel.style.display = "block";
+            };
 
-                    <div id="marker" class="modal">
-                        <div class="modal-content">
-                            <span class="close_marker">&times;</span>
-                            <h2>Marker</h2>
-                            <img src='css/image/indien.jpg' width=30% height=30% alt="indien">
-                            <img src='css/image/girl.jpg' width=30% height=30% alt="girl">
-                            <img src='css/image/femme.jpg' width=30% height=30% alt="femme">
-                            <img src='css/image/licorne.jpg' width=30% height=30% alt="licorne">
-                            <img src='css/image/photo.jpg' width=30% height=30% alt="photo">
-                            <img src='css/image/shazam.jpg' width=30% height=30% alt="shazam">
-                            <img src='css/image/indienne2.jpg' width=30% height=30% alt="indienne">
-                        </div>
-                    </div>
+            // When the user clicks on <span> (x), close the modal
+            span_pastel.onclick = function() {
+              modal_pastel.style.display = "none";
+            };
 
-                    <script>
-                        // Get the modal
-                        var modal_marker = document.getElementById("marker");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_pastel) {
+                modal_pastel.style.display = "none";
+              }
+            };
+          </script>
 
-                        // Get the button that opens the modal
-                        var img_marker= document.getElementById("marker_img");
+          <li class="carousel-item">
+            <img
+              class="image_projet"
+              id="marker_img"
+              src="css/image/marker.png"
+              width="100%"
+            />
+            <p class="ecriture">Marker</p>
+          </li>
 
-                        // Get the <span> element that closes the modal
-                        var span_marker = document.getElementsByClassName("close_marker")[0];
+          <div id="marker" class="modal">
+            <div class="modal-content">
+              <span class="close_marker">&times;</span>
+              <h2>Marker</h2>
+              <img
+                src="css/image/indien.jpg"
+                width="30%"
+                height="30%"
+                alt="indien"
+              />
+              <img
+                src="css/image/girl.jpg"
+                width="30%"
+                height="30%"
+                alt="girl"
+              />
+              <img
+                src="css/image/femme.jpg"
+                width="30%"
+                height="30%"
+                alt="femme"
+              />
+              <img
+                src="css/image/licorne.jpg"
+                width="30%"
+                height="30%"
+                alt="licorne"
+              />
+              <img
+                src="css/image/photo.jpg"
+                width="30%"
+                height="30%"
+                alt="photo"
+              />
+              <img
+                src="css/image/shazam.jpg"
+                width="30%"
+                height="30%"
+                alt="shazam"
+              />
+              <img
+                src="css/image/indienne2.jpg"
+                width="30%"
+                height="30%"
+                alt="indienne"
+              />
+            </div>
+          </div>
 
-                        // When the user clicks the button, open the modal
-                        img_marker.onclick = function() {
-                            modal_marker.style.display = "block";
-                        }
+          <script>
+            // Get the modal
+            var modal_marker = document.getElementById("marker");
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_marker.onclick = function() {
-                            modal_marker.style.display = "none";
-                        }
+            // Get the button that opens the modal
+            var img_marker = document.getElementById("marker_img");
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_marker) {
-                                modal_marker.style.display = "none";
-                            }
-                        }
-                    </script>
+            // Get the <span> element that closes the modal
+            var span_marker = document.getElementsByClassName(
+              "close_marker"
+            )[0];
 
-                    <li class="carousel-item">
-                        <img class="image_projet" id="peinture_img" src="css/image/peinture.png" width="100%" />
-                        <p class="ecriture">Peinture</p>
-                    </li>
+            // When the user clicks the button, open the modal
+            img_marker.onclick = function() {
+              modal_marker.style.display = "block";
+            };
 
-                    <div id="peinture" class="modal">
-                        <div class="modal-content">
-                            <span class="close_peinture">&times;</span>
-                            <img src='css/image/chien.jpg' width=30% height=30% alt="chien">
-                            <img src='css/image/barque.jpg' width=30% height=30% alt="barque">
-                            <img src='css/image/renard.jpg' width=30% height=30% alt="renard">
-                            <img src='css/image/neige.jpg' width=30% height=30% alt="neige">
-                            <img src='css/image/hibou.jpg' width=30% height=30% alt="hibou">
-                        </div>
-                    </div>
+            // When the user clicks on <span> (x), close the modal
+            span_marker.onclick = function() {
+              modal_marker.style.display = "none";
+            };
 
-                    <script>
-                        // Get the modal
-                        var modal_peinture = document.getElementById("peinture");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_marker) {
+                modal_marker.style.display = "none";
+              }
+            };
+          </script>
 
-                        // Get the button that opens the modal
-                        var img_peinture = document.getElementById("peinture_img");
+          <li class="carousel-item">
+            <img
+              class="image_projet"
+              id="peinture_img"
+              src="css/image/peinture.png"
+              width="100%"
+            />
+            <p class="ecriture">Peinture</p>
+          </li>
 
-                        // Get the <span> element that closes the modal
-                        var span_peinture = document.getElementsByClassName("close_peinture")[0];
+          <div id="peinture" class="modal">
+            <div class="modal-content">
+              <span class="close_peinture">&times;</span>
+              <img
+                src="css/image/chien.jpg"
+                width="30%"
+                height="30%"
+                alt="chien"
+              />
+              <img
+                src="css/image/barque.jpg"
+                width="30%"
+                height="30%"
+                alt="barque"
+              />
+              <img
+                src="css/image/renard.jpg"
+                width="30%"
+                height="30%"
+                alt="renard"
+              />
+              <img
+                src="css/image/neige.jpg"
+                width="30%"
+                height="30%"
+                alt="neige"
+              />
+              <img
+                src="css/image/hibou.jpg"
+                width="30%"
+                height="30%"
+                alt="hibou"
+              />
+            </div>
+          </div>
 
-                        // When the user clicks the button, open the modal
-                        img_peinture.onclick = function() {
-                            modal_peinture.style.display = "block";
-                        }
+          <script>
+            // Get the modal
+            var modal_peinture = document.getElementById("peinture");
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_peinture.onclick = function() {
-                            modal_peinture.style.display = "none";
-                        }
+            // Get the button that opens the modal
+            var img_peinture = document.getElementById("peinture_img");
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_peinture) {
-                                modal_peinture.style.display = "none";
-                            }
-                        }
-                    </script>
+            // Get the <span> element that closes the modal
+            var span_peinture = document.getElementsByClassName(
+              "close_peinture"
+            )[0];
 
-                    <li class="carousel-item">
-                        <img class="image_projet" id="inktober_img" src="css/image/dessin.png" width="100%"/>
-                        <p class="ecriture">Dessin</p>
-                    </li>
+            // When the user clicks the button, open the modal
+            img_peinture.onclick = function() {
+              modal_peinture.style.display = "block";
+            };
 
-                    <div id="inktober" class="modal">
-                        <div class="modal-content">
-                            <span class="close_inktober">&times;</span>
-                            <h2>Inktober</h2>
-                            <img class="mySlides" src='css/image/inktober1.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober2.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober3.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober4.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober5.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober6.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober7.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober8.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober9.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober10.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober11.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober12.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober13.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober14.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober15.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober16.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober17.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober18.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober20.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober21.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober22.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober23.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober24.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober25.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober26.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober27.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober28.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober29.jpg' width=50% height=50% alt="inktober">
-                            <img class="mySlides" src='css/image/inktober30.jpg' width=50% height=50% alt="inktober">
-                        </div>
-                    </div>
+            // When the user clicks on <span> (x), close the modal
+            span_peinture.onclick = function() {
+              modal_peinture.style.display = "none";
+            };
 
-                    <script>
-                        var slideIndex = 0;
-                        carousel();
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_peinture) {
+                modal_peinture.style.display = "none";
+              }
+            };
+          </script>
 
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("mySlides");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";
-                            }
-                            slideIndex++;
-                            if (slideIndex > x.length) {slideIndex = 1}
-                            x[slideIndex-1].style.display = "block";
-                            setTimeout(carousel, 2000); // Change image every 2 seconds
-                        }
-                    </script>
+          <li class="carousel-item">
+            <img
+              class="image_projet"
+              id="inktober_img"
+              src="css/image/dessin.png"
+              width="100%"
+            />
+            <p class="ecriture">Dessin</p>
+          </li>
 
-                    <script>
-                        // Get the modal
-                        var modal_inktober = document.getElementById("inktober");
+          <div id="inktober" class="modal">
+            <div class="modal-content">
+              <span class="close_inktober">&times;</span>
+              <h2>Inktober</h2>
+              <img
+                class="mySlides"
+                src="css/image/inktober1.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober2.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober3.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober4.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober5.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober6.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober7.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober8.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober9.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober10.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober11.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober12.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober13.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober14.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober15.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober16.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober17.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober18.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober20.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober21.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober22.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober23.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober24.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober25.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober26.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober27.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober28.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober29.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+              <img
+                class="mySlides"
+                src="css/image/inktober30.jpg"
+                width="50%"
+                height="50%"
+                alt="inktober"
+              />
+            </div>
+          </div>
 
-                        // Get the button that opens the modal
-                        var img_inktober = document.getElementById("inktober_img");
+          <script>
+            var slideIndex = 0;
+            carousel();
 
-                        // Get the <span> element that closes the modal
-                        var span_inktober = document.getElementsByClassName("close_inktober")[0];
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {
+                slideIndex = 1;
+              }
+              x[slideIndex - 1].style.display = "block";
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+          </script>
 
-                        // When the user clicks the button, open the modal
-                        img_inktober.onclick = function() {
-                            modal_inktober.style.display = "block";
-                        }
+          <script>
+            // Get the modal
+            var modal_inktober = document.getElementById("inktober");
 
-                        // When the user clicks on <span> (x), close the modal
-                        span_inktober.onclick = function() {
-                            modal_inktober.style.display = "none";
-                        }
+            // Get the button that opens the modal
+            var img_inktober = document.getElementById("inktober_img");
 
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal_inktober) {
-                                modal_inktober.style.display = "none";
-                            }
-                        }
-                    </script>
+            // Get the <span> element that closes the modal
+            var span_inktober = document.getElementsByClassName(
+              "close_inktober"
+            )[0];
 
-                </ul>
-            </section>
+            // When the user clicks the button, open the modal
+            img_inktober.onclick = function() {
+              modal_inktober.style.display = "block";
+            };
 
-        </main>
+            // When the user clicks on <span> (x), close the modal
+            span_inktober.onclick = function() {
+              modal_inktober.style.display = "none";
+            };
 
-    </body>
-
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_inktober) {
+                modal_inktober.style.display = "none";
+              }
+            };
+          </script>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
