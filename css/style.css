@@ -123,19 +123,6 @@ h1.nom {
   }
 }
 
-.presentation {
-  background: repeat-x top url("image/fond.png");
-}
-
-@media (min-width: 768px) {
-  .presentation {
-    background: none;
-  }
-
-  .profil {
-    background: repeat-x center url("image/fond.png");
-  }
-}
 
 .photo {
   min-width: 300px;
@@ -146,10 +133,6 @@ h1.nom {
   margin-left: 9%;
   margin-right: 9%;
 }*/
-
-.ecriture#post {
-  font-size: 250%;
-}
 
 /*
 #presentation {
@@ -210,6 +193,33 @@ footer {
 
 .top-footer a {
   color: #867298;
+}
+
+.ecriture {
+  /*font-family: "Freestyle Script Regular", cursive;*/
+  font-size: 130%;
+  margin-top: -24%;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+
+.ecriture#post {
+  font-size: 200%;
+}
+
+@media (min-width: 768px) {
+  .ecriture {
+    font-family: "Freestyle Script Regular", cursive;
+    font-size: 200%;
+    margin-top: -23.5%;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .ecriture#post {
+    font-size: 250%;
+  }
 }
 
 /*
@@ -446,13 +456,6 @@ div span:focus {
   cursor: pointer;
   background-color: rgba(238, 118, 116, 0.66);
   box-shadow: inset 0 0 5px black;
-}
-
-.ecriture {
-  font-family: "Freestyle Script Regular", cursive;
-  font-size: 200%;
-  margin-top: -23.5%;
-  text-align: center;
 }
 
 #bonkoin {
