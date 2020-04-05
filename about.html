@@ -2,14 +2,18 @@
 <html xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Portfolio</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <link rel="icon" href="logo.ico" />
   </head>
@@ -24,17 +28,21 @@
         </h1></a
       >
       <nav class="menu h-12 border-b-4 border-double border-black">
-        <ul class="flex flex-row justify-center text-2xl items-end mt-2">
-          <li class="nav_li mt-3">
+        <ul
+          class="flex flex-row justify-center text-xl md:text-2xl items-end mt-2"
+        >
+          <li class="nav_li mt-4 md:mt-3">
             <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+
               href="works.html"
               >Projets</a
             >
           </li>
           <li class="nav_li">
             <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+
               href="about.html"
               >A propos</a
             >
@@ -44,23 +52,16 @@
     </header>
 
     <main>
-      <div class="profil">
-        <div class="element">
-          <div class="card">
-            <img
-              class="photo"
-              src="css/image/profil.png"
-              width="100%"
-              alt="profil"
-            />
-            <div class="card-content">
-              <p class="ecriture" id="post">Informatique Graphique</p>
-            </div>
-          </div>
+      <div
+        class="profil flex md:flex-row flex-col justify-between px-10 lg:px-32 mt-6 lg:mt-12 items-center"
+      >
+        <div class="md:mx-6 md:pt-4 lg:mr-24">
+          <img class="photo w-full" src="css/image/profil.png" alt="profil" />
+          <p class="ecriture" id="post">Informatique Graphique</p>
         </div>
 
-        <div class="element" id="presentation">
-          <p class="présentation">
+        <div class="mt-12 lg:mt-32 md:pt-4 md:mx-6 lg:ml-24" id="presentation">
+          <p class="text-justify text-black md:text-white text-md md:text-lg">
             Actuellement étudiante en informatique graphique, tout ce qui touche
             à l'art et la création m'intéresse. Aussi, j'essaye de découvrir le
             plus de domaine d'art possible. J'aime allier les technologies à
@@ -68,11 +69,12 @@
             projet, de A à Z, en passant à la fois par la programmation et l'art
             visuel.
           </p>
-          <div class="cv">
-            <p id="cv">Si vous voulez en savoir plus, téléchargez mon CV :</p>
+          <div class="text-center text-lg md:text-xl mt-12 lg:mt-32">
+            <p>Si vous voulez en savoir plus, téléchargez mon CV :</p>
             <a href="CV_BRANCHEREAU_Candice.pdf" target="_blank"
               ><button
-                class="text-xl mt-2 rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+                class="text-lg md:text-xl mt-2 rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+
               >
                 Télécharger mon CV
               </button></a
@@ -82,10 +84,13 @@
       </div>
     </main>
 
-    <footer>
+    <footer
+      class="absolute w-full mt-12 md:mt-16 pt-2 h-16 md:h-12 text-md md:text-lg text-center"
+    >
       <section class="top-footer">
         07-81-93-36-23 -
         <a
+          class="font-semibold hover:text-white duration-500"
           href="https://www.pinterest.fr/candicebrancher/own-creation/"
           target="_blank"
           >Pinterest</a
