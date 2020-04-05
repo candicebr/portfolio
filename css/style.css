@@ -3,13 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@import url("http://fr.allfont.net/allfont.css?fonts=freestyle-script-normal");
 
+/*
 @font-face {
   font-family: "Freestyle Script Regular";
   font-style: normal;
   font-weight: normal;
   src: local("Freestyle Script Regular"), url("FREESCPT.woff") format("woff");
-}
+}*/
 
 /*menu*/
 h1.titre {
@@ -99,8 +101,26 @@ h1.nom {
 
 /*a propos*/
 
-.profil {
+.index {
   background: repeat-x center url("image/fond.png");
+}
+
+.profil {
+  background: none;
+}
+
+.presentation {
+  background: repeat-x top url("image/fond.png");
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    background: none;
+  }
+
+  .profil {
+    background: repeat-x center url("image/fond.png");
+  }
 }
 
 .photo {
