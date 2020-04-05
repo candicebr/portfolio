@@ -206,6 +206,14 @@ footer {
   font-size: 200%;
 }
 
+.container1-1 {
+  background: none;
+}
+
+.container2 {
+  background: none;
+}
+
 @media (min-width: 768px) {
   .ecriture {
     font-family: "Freestyle Script Regular", cursive;
@@ -217,6 +225,14 @@ footer {
 
   .ecriture#post {
     font-size: 250%;
+  }
+
+  .container1-1 {
+    background: repeat-x center url("image/fond_violet.png");
+  }
+
+  .container2 {
+    background: repeat-x bottom url("image/fond.png");
   }
 }
 
@@ -262,14 +278,6 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }*/
-
-.container1-1 {
-  background: repeat-x center url("image/fond_violet.png");
-}
-
-.container2 {
-  background: repeat-x bottom url("image/fond.png");
-}
 
 /*
 .projets {
