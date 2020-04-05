@@ -123,6 +123,7 @@ h1.nom {
   }
 }
 
+
 .photo {
   min-width: 300px;
 }
@@ -187,6 +188,7 @@ footer {
   position: absolute;
   text-align: center;
   font-family: "Spartan", cursive;
+
 }
 
 .top-footer a {
