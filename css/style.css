@@ -386,9 +386,9 @@ div span:focus {
 /*carousel*/
 
 .carousel {
+  /*
   margin-top: 20px;
-  height: 200px;
-  /*background-color: #d0d6b5;*/
+  height: 200px;*/
   background: repeat-x center url("image/fond_vert.png");
 }
 
@@ -410,11 +410,11 @@ div span:focus {
 
 .carousel-item img.image_projet:hover {
   cursor: pointer;
-  width: 90%;
+  width: 99%;
 }
 
 .carousel-items::-webkit-scrollbar-track {
-  background-color: #867298;
+  background-color: #867298a6;
   box-shadow: inset 0 0 5px black;
 }
 
@@ -425,7 +425,6 @@ div span:focus {
 
 .carousel-items::-webkit-scrollbar-thumb {
   background-color: #ee7674;
-  border-radius: 10px;
   box-shadow: 0px 0px 5px black;
 }
 
@@ -457,8 +456,7 @@ div span:focus {
 
 .carousel-items::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
-  background-color: rgba(238, 118, 116, 0.66);
-  box-shadow: inset 0 0 5px black;
+  background-color: rgba(238, 118, 116, 0.829);
 }
 
 #bonkoin {
