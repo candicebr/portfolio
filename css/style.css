@@ -82,12 +82,8 @@ nav {
 
 h1.nom {
   font-family: "Amatic SC", cursive;
-  color: white;
-  text-align: center;
-  margin-top: 30%;
-  font-size: 500%;
 }
-
+/*
 .element#index {
   text-align: center;
 }
@@ -99,25 +95,23 @@ h1.nom {
 
 .bouton_projet {
   margin-top: 40%;
-}
+}*/
 
 /*a propos*/
 
 .profil {
-  display: flex;
-  margin-top: 145px;
-  height: 350px;
-  background: repeat-x bottom url("image/fond.png");
+  background: repeat-x center url("image/fond.png");
 }
 
 .photo {
   min-width: 300px;
 }
 
+/*
 .element {
   margin-left: 9%;
   margin-right: 9%;
-}
+}*/
 
 .ecriture#post {
   font-size: 250%;
@@ -143,7 +137,7 @@ p#cv {
   font-size: 130%;
 }
 
-button {
+/*button {
   font-size: 120%;
   background-color: #867298;
   border-radius: 5px;
@@ -159,6 +153,15 @@ button {
 button:hover {
   background-color: white;
   color: black;
+  border: 2px solid #867298;
+}*/
+
+button {
+  background-color: #867298;
+  font-family: "Spartan", cursive;
+}
+
+button:hover {
   border: 2px solid #867298;
 }
 
