@@ -247,7 +247,7 @@ footer {
 }
 
 /*projet*/
-
+/*
 .container2 {
   padding-bottom: 2%;
   margin-top: -150px;
@@ -273,6 +273,7 @@ footer {
   padding-bottom: 65px;
 }
 
+
 .projets {
   display: flex;
   text-align: center;
@@ -294,7 +295,7 @@ footer {
   cursor: pointer;
   width: 97%;
   transition-duration: 0.3s;
-}
+}*/
 
 img {
   border-radius: 8px;
