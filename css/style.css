@@ -100,7 +100,21 @@ h1.nom {
 /*a propos*/
 
 .profil {
-  background: repeat-x center url("image/fond.png");
+  background: none;
+}
+
+.presentation {
+  background: repeat-x top url("image/fond.png");
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    background: none;
+  }
+
+  .profil {
+    background: repeat-x center url("image/fond.png");
+  }
 }
 
 .photo {
