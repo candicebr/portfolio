@@ -18,15 +18,27 @@
     <header>
       <a id="titre" href="index.html">
         <h1
-          class="titre mt-0 text-center text-4xl font-semibold text-black hover:text-gray-700"
+          class="titre mt-0 text-center text-4xl font-semibold text-black hover:text-gray-700 duration-500"
         >
           Candice BRANCHEREAU
         </h1></a
       >
-      <nav class="menu">
-        <ul id="nav">
-          <li class="nav_li"><a class="nav" href="works.html">Projets</a></li>
-          <li class="nav_li"><a class="nav" href="about.html">A propos</a></li>
+      <nav class="menu h-12 border-b-4 border-double border-black">
+        <ul class="flex flex-row justify-center text-2xl items-end mt-2">
+          <li class="nav_li mt-3">
+            <a
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              href="works.html"
+              >Projets</a
+            >
+          </li>
+          <li class="nav_li">
+            <a
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              href="about.html"
+              >A propos</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -59,7 +71,11 @@
           <div class="cv">
             <p id="cv">Si vous voulez en savoir plus, téléchargez mon CV :</p>
             <a href="CV_BRANCHEREAU_Candice.pdf" target="_blank"
-              ><button>Télécharger mon CV</button></a
+              ><button
+                class="text-xl mt-2 rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+              >
+                Télécharger mon CV
+              </button></a
             >
           </div>
         </div>
