@@ -123,6 +123,20 @@ h1.nom {
   }
 }
 
+.presentation {
+  background: repeat-x top url("image/fond.png");
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    background: none;
+  }
+
+  .profil {
+    background: repeat-x center url("image/fond.png");
+  }
+}
+
 .photo {
   min-width: 300px;
 }
@@ -191,6 +205,7 @@ footer {
   position: absolute;
   text-align: center;
   font-family: "Spartan", cursive;
+
 }
 
 .top-footer a {
