@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <link rel="icon" href="logo.ico" />
   </head>
@@ -21,15 +22,29 @@
     <header>
       <a id="titre" href="index.html">
         <h1
-          class="titre mt-0 text-center text-4xl font-semibold text-black hover:text-gray-700"
+          class="titre mt-0 text-center text-3xl md:text-4xl font-semibold text-black hover:text-gray-700 duration-500"
         >
           Candice BRANCHEREAU
         </h1></a
       >
-      <nav class="menu">
-        <ul id="nav">
-          <li class="nav_li"><a class="nav" href="works.html">Projets</a></li>
-          <li class="nav_li"><a class="nav" href="about.html">A propos</a></li>
+      <nav class="menu h-12 border-b-4 border-double border-black">
+        <ul
+          class="flex flex-row justify-center text-xl md:text-2xl items-end mt-2"
+        >
+          <li class="nav_li mt-4 md:mt-3">
+            <a
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              href="works.html"
+              >Projets</a
+            >
+          </li>
+          <li class="nav_li">
+            <a
+              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
+              href="about.html"
+              >A propos</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -38,8 +53,10 @@
       <div class="fond">
         <div class="container1-1">
           <div class="container1">
-            <ul class="projets">
-              <li class="projet">
+            <ul
+              class="projets flex flex-col md:flex-row justify-center items-center mb-10 mt-4 md:my-10"
+            >
+              <li class="projet my-4 md:mx-16">
                 <a
                   id="bonkoin"
                   href="https://bonkoin.herokuapp.com"
@@ -57,7 +74,7 @@
                 </a>
               </li>
 
-              <li class="projet">
+              <li class="projet my-4 md:mx-16">
                 <a
                   id="meteo"
                   href="https://meteo-app.netlify.com"
@@ -80,8 +97,10 @@
       </div>
 
       <div class="container2">
-        <ul class="projets">
-          <li class="projet">
+        <ul
+          class="projets flex flex-col md:flex-row justify-center items-center"
+        >
+          <li class="projet my-4 md:mx-16">
             <img
               class="image_projet"
               id="personnages_img"
@@ -124,7 +143,7 @@
             };
           </script>
 
-          <li class="projet">
+          <li class="projet my-4 md:mx-16">
             <img
               class="image_projet"
               id="feng_shui_img"
@@ -302,7 +321,7 @@
             };
           </script>
 
-          <li class="projet">
+          <li class="projet my-4 md:mx-16">
             <img
               class="image_projet"
               id="magic_journey_img"
@@ -478,8 +497,10 @@
       </div>
 
       <div class="container3">
-        <ul class="projets">
-          <li class="projet">
+        <ul
+          class="projets flex flex-col md:flex-row justify-center items-center my-10"
+        >
+          <li class="projet my-4 md:mx-16">
             <img
               class="image_projet"
               id="jeu_img"
@@ -532,7 +553,7 @@
             };
           </script>
 
-          <li class="projet">
+          <li class="projet my-4 md:mx-16">
             <img
               class="image_projet"
               id="jeu2_img"
