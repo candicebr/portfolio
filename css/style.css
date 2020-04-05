@@ -117,6 +117,7 @@ h1.nom {
   font-size: 250%;
 }
 
+/*
 #presentation {
   width: 600px;
 }
@@ -135,7 +136,7 @@ p.présentation {
 
 p#cv {
   font-size: 130%;
-}
+}*/
 
 /*button {
   font-size: 120%;
@@ -165,6 +166,18 @@ button:hover {
   border: 2px solid #867298;
 }
 
+footer {
+  background: #d0d6b5;
+  position: absolute;
+  text-align: center;
+  font-family: "Spartan", cursive;
+}
+
+.top-footer a {
+  color: #867298;
+}
+
+/*
 footer {
   bottom: 0;
   left: 0;
