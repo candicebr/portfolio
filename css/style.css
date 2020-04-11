@@ -181,6 +181,7 @@ footer {
 
 .video {
   background: no-repeat bottom url("image/ecran.png");
+  background-size: contain;
 }
 
 
