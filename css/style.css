@@ -216,7 +216,7 @@ footer {
   background: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .ecriture {
     font-family: "Freestyle Script Regular", cursive;
     font-size: 200%;
@@ -305,40 +305,32 @@ footer {
   transition-duration: 0.3s;
 }*/
 
-img {
-  border-radius: 8px;
-}
-
-img.mySlides {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*tooltip (vector info)*/
-
+/*
 .tooltip {
   position: relative;
   display: inline-block;
 }
-
+*/
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 50%;
+  background-color: #ec716a;
+  font-family: "Spartan", cursive;
+
+  /*width: 50%;
   font-size: 150%;
   font-weight: 100;
-  background-color: #ec716a;
   opacity: 95%;
   color: white;
   text-align: center;
   border-radius: 6px;
   padding: 5px 5px;
-  font-family: "Spartan", cursive;
 
-  /* Position the tooltip */
+  /* Position the tooltip 
   position: absolute;
   margin-top: 80%;
   margin-left: -30%;
-  z-index: 1;
+  z-index: 1;*/
 }
 
 .tooltip:hover .tooltiptext {
@@ -366,7 +358,7 @@ img.mySlides {
   background-color: #fefefe;
   text-align: right;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  /*padding: 20px;*/
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -470,7 +462,7 @@ div span:focus {
 }
 
 /*****************************************SLIDER************************************************/
-
+/*
 img {
   vertical-align: middle;
 }
@@ -489,22 +481,28 @@ h3 {
   font-weight: 100;
   position: absolute;
   z-index: 2;
-}
+}*/
 
 .slide img {
   border-style: double;
   border-color: black;
   border-width: 4px;
+  border-radius: 8px;
   z-index: 1;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
+/*
+img {
+  border-radius: 8px;
+}*/
+
+/* Position the image container (needed to position the left and right arrows) 
 .slider {
   position: relative;
   padding-top: 63px;
 }
 
-/* Hide the images by default */
+/*Hide the images by default */
 .slide {
   display: none;
 }
@@ -518,51 +516,30 @@ h3 {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 14px;
-  margin-top: -50px;
   color: #867298;
-  font-weight: bold;
-  font-size: 200%;
-  border-radius: 4px 0 0 4px;
   user-select: none;
   -webkit-user-select: none;
-  margin-left: -40%;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  margin-right: 10%;
-  border-radius: 0 4px 4px 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(208, 214, 181, 0.8);
 }
 
-/* Container for image text */
 .caption-container {
-  text-align: center;
-  margin-top: -45px;
-  margin-bottom: -45px;
   background-color: #ee7674;
-  color: white;
   font-family: "Freestyle Script Regular", cursive;
-  font-size: 300%;
 }
 
+/*
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Six columns side by side */
+/* Six columns side by side 
 .column {
   float: left;
   width: 16.66%;
