@@ -562,7 +562,7 @@
             <div class="modal-content p-2 lg:p-4">
               <span class="close_jeu">&times;</span>
               <div
-                class="video flex flex-col justify-center items-center pb-64"
+                class="video flex flex-col justify-center items-center pb-32"
               >
                 <h3>Développement platformer 2D</h3>
                 <iframe
@@ -572,7 +572,7 @@
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                  style="margin-top:67px"
+                  style="margin-top:20px margin-bottom:50px"
                 ></iframe>
               </div>
             </div>
@@ -614,6 +614,51 @@
             />
             <p class="ecriture">Jeu 3D</p>
           </li>
+          <div id="jeu2" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_jeu2">&times;</span>
+              <div
+                class="video flex flex-col justify-center items-center pb-32"
+              >
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/s7bDO0kyaVY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style="margin-top:20px margin-bottom:50px"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal_jeu2 = document.getElementById("jeu2");
+
+            // Get the button that opens the modal
+            var img_jeu2 = document.getElementById("jeu2_img");
+
+            // Get the <span> element that closes the modal
+            var span_jeu2 = document.getElementsByClassName("close_jeu2")[0];
+
+            // When the user clicks the button, open the modal
+            img_jeu2.onclick = function() {
+              modal_jeu2.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_jeu2.onclick = function() {
+              modal_jeu2.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_jeu2) {
+                modal_jeu2.style.display = "none";
+              }
+            };
+          </script>
         </ul>
       </div>
 
