@@ -177,6 +177,11 @@ footer {
   }
 }
 
+.video {
+  background: no-repeat bottom url("image/ecran.png");
+  padding-bottom: 200px;
+}
+
 /*projet*/
 
 /*
