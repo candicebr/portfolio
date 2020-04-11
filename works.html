@@ -173,7 +173,7 @@
 
                 <div class="flex flex-row items-center justify-between">
                   <a
-                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
                     onclick="plusSlidesMeuble(-1)"
                     >❮</a
                   >
@@ -203,7 +203,7 @@
                   </div>
 
                   <a
-                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
                     onclick="plusSlidesMeuble(1)"
                     >❯</a
                   >
@@ -373,7 +373,7 @@
                 </div>
                 <div class="flex flex-row items-center justify-between">
                   <a
-                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
                     onclick="plusSlides(-1)"
                     >❮</a
                   >
@@ -403,7 +403,7 @@
                   </div>
 
                   <a
-                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
                     onclick="plusSlides(1)"
                     >❯</a
                   >
@@ -563,16 +563,20 @@
           <div id="jeu" class="modal">
             <div class="modal-content p-2 lg:p-4">
               <span class="close_jeu">&times;</span>
-              <h3>Développement platformer 2D</h3>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/jcueBFEV8BM"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="margin-top:67px"
-              ></iframe>
+              <div
+                class="video flex flex-col justify-center items-center pb-64"
+              >
+                <h3>Développement platformer 2D</h3>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/jcueBFEV8BM"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style="margin-top:67px"
+                ></iframe>
+              </div>
             </div>
           </div>
           <script>
