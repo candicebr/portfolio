@@ -178,8 +178,20 @@ footer {
 }
 
 .video {
-  background: no-repeat bottom url("image/ecran.png");
-  background-size: 90%;
+  /*background: no-repeat bottom url("image/ecran.png");
+  background-size: contain;*/
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*projet*/
