@@ -18,86 +18,24 @@ h1.titre {
   font-family: "Amatic SC", cursive;
   background: #d0d6b5;
 }
-/*
-#titre {
-	color: black;
-	text-decoration : none;
-}*/
 
 #titre:hover {
-  /*color: rgba(0, 0, 0, 0.5);*/
   transition-duration: 0.4s;
 }
-/*
-.nav {
-  color: #000000;
-  text-decoration: none;
-  margin-right: 50px;
-  margin-left: 50px;
-  background-color: white;
-  border-radius: 10px 10px 0 0;
-  border-style: double double none double;
-  border-width: 4px;
-  border-color: black;
-  padding: 5px 20px 5px 20px;
-  transition-duration: 0.6s;
-}
-
-.nav:hover {
-  color: white;
-  background-color: black;
-  text-decoration: none;
-}*/
 
 header {
   background: #75b9be;
-  /*position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-  border-style: none none double none;
-  border-width: 4px;*/
 }
-/*
-#nav {
-  padding-right: 30px;
-  margin-bottom: 0;
-}
-*/
-.nav_li {
-  font-family: "Spartan", cursive; /*
-  display: inline;
-  font-size: 150%;*/
-}
-/*
-nav {
-  text-align: center;
-}
-*/
 
-/*body{
-	background: url("image/fleur_fond4.jpg") no-repeat top right;
-}*/
+.nav_li {
+  font-family: "Spartan", cursive;
+}
 
 /*index*/
 
 h1.nom {
   font-family: "Amatic SC", cursive;
 }
-/*
-.element#index {
-  text-align: center;
-}
-
-.element#img_index {
-  margin-top: -100px;
-  min-width: 350px;
-}
-
-.bouton_projet {
-  margin-top: 40%;
-}*/
 
 /*a propos*/
 
@@ -194,7 +132,6 @@ footer {
 }
 
 .ecriture {
-  /*font-family: "Freestyle Script Regular", cursive;*/
   font-size: 130%;
   margin-top: -24%;
   text-align: center;
@@ -214,7 +151,7 @@ footer {
   background: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .ecriture {
     font-family: "Freestyle Script Regular", cursive;
     font-size: 200%;
@@ -234,50 +171,13 @@ footer {
   .container2 {
     background: repeat-x bottom url("image/fond.png");
   }
-}
 
-/*
-footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #d0d6b5;
-  width: 100%;
-  height: 30px;
-  position: absolute;
-  text-align: center;
-  font-size: 110%;
-  padding-top: 15px;
-  font-family: "Spartan", cursive;
-}
-
-.top-footer a {
-  color: #867298;
-  text-decoration: none;
-  font-weight: bold;
-  transition-duration: 0.4s;
-}
-
-.top-footer a:hover {
-  color: white;
+  .caption-container {
+    font-family: "Freestyle Script Regular", cursive;
+  }
 }
 
 /*projet*/
-
-/*
-.container3 {
-  width: 70%;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  margin-left: 13.55%;
-}
-
-.container1 {
-  width: 70%;
-  margin-left: 13.55%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}*/
 
 /*
 .projets {
@@ -303,40 +203,17 @@ footer {
   transition-duration: 0.3s;
 }*/
 
-img {
-  border-radius: 8px;
-}
-
-img.mySlides {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*tooltip (vector info)*/
-
+/*
 .tooltip {
   position: relative;
   display: inline-block;
 }
-
+*/
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 50%;
-  font-size: 150%;
-  font-weight: 100;
   background-color: #ec716a;
-  opacity: 95%;
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 5px;
   font-family: "Spartan", cursive;
-
-  /* Position the tooltip */
-  position: absolute;
-  margin-top: 80%;
-  margin-left: -30%;
-  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
@@ -363,8 +240,7 @@ img.mySlides {
 .modal-content {
   background-color: #fefefe;
   text-align: right;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 20px auto; /* 15% from the top and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -386,9 +262,6 @@ div span:focus {
 /*carousel*/
 
 .carousel {
-  margin-top: 20px;
-  height: 200px;
-  /*background-color: #d0d6b5;*/
   background: repeat-x center url("image/fond_vert.png");
 }
 
@@ -410,11 +283,11 @@ div span:focus {
 
 .carousel-item img.image_projet:hover {
   cursor: pointer;
-  width: 90%;
+  width: 99%;
 }
 
 .carousel-items::-webkit-scrollbar-track {
-  background-color: #867298;
+  background-color: #867298a6;
   box-shadow: inset 0 0 5px black;
 }
 
@@ -425,7 +298,6 @@ div span:focus {
 
 .carousel-items::-webkit-scrollbar-thumb {
   background-color: #ee7674;
-  border-radius: 10px;
   box-shadow: 0px 0px 5px black;
 }
 
@@ -457,8 +329,7 @@ div span:focus {
 
 .carousel-items::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
-  background-color: rgba(238, 118, 116, 0.66);
-  box-shadow: inset 0 0 5px black;
+  background-color: rgba(238, 118, 116, 0.829);
 }
 
 #bonkoin {
@@ -471,40 +342,19 @@ div span:focus {
 
 /*****************************************SLIDER************************************************/
 
-img {
-  vertical-align: middle;
-}
-
 h3 {
   font-family: "Spartan", cursive;
-  font-size: 150%;
-  border-radius: 10px 10px 0 0;
-  border-style: double double none double;
-  border-width: 4px;
-  border-color: black;
-  padding: 5px 20px 5px 20px;
-  margin-left: 15%;
-  margin-bottom: -20px;
-  background-color: white;
-  font-weight: 100;
-  position: absolute;
-  z-index: 2;
 }
 
 .slide img {
   border-style: double;
   border-color: black;
   border-width: 4px;
+  border-radius: 8px;
   z-index: 1;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.slider {
-  position: relative;
-  padding-top: 63px;
-}
-
-/* Hide the images by default */
+/*Hide the images by default */
 .slide {
   display: none;
 }
@@ -518,54 +368,20 @@ h3 {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 14px;
-  margin-top: -50px;
   color: #867298;
-  font-weight: bold;
-  font-size: 200%;
-  border-radius: 4px 0 0 4px;
   user-select: none;
   -webkit-user-select: none;
-  margin-left: -40%;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  margin-right: 10%;
-  border-radius: 0 4px 4px 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(208, 214, 181, 0.8);
 }
 
-/* Container for image text */
 .caption-container {
-  text-align: center;
-  margin-top: -45px;
-  margin-bottom: -45px;
   background-color: #ee7674;
-  color: white;
-  font-family: "Freestyle Script Regular", cursive;
-  font-size: 300%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+  font-family: "Amatic SC", cursive;
 }
 
 /* Add a transparency effect for thumnbail images */

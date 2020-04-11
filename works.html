@@ -68,8 +68,12 @@
                       src="css/image/bonkoin.png"
                       width="100%"
                       alt="bonkoin"
-                    /><span class="tooltiptext">Voir le site</span>
+                    />
                     <p class="ecriture">Web " BonKoin"</p>
+                    <span
+                      class="tooltiptext rounded text-xl text-white px-4 py-2 opacity-75 hover:text-white"
+                      >Voir le site</span
+                    >
                   </div>
                 </a>
               </li>
@@ -86,8 +90,12 @@
                       src="css/image/meteo.png"
                       width="100%"
                       alt="meteo"
-                    /><span class="tooltiptext">Voir le site</span>
+                    />
                     <p class="ecriture">Web " Météo"</p>
+                    <span
+                      class="tooltiptext rounded text-xl text-white px-4 py-2 opacity-75 hover:text-white"
+                      >Voir le site</span
+                    >
                   </div>
                 </a>
               </li>
@@ -154,95 +162,116 @@
           </li>
 
           <div id="feng_shui" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close">&times;</span>
-              <h3>Projet de groupe : Aménagement Feng Shui</h3>
-              <div class="slider">
-                <div class="slide meuble">
-                  <img src="css/image/meuble_bureau.png" style="width:65%" />
+
+              <div class="slider flex flex-col items-center">
+                <h3 class="text-center lg:text-xl">
+                  Projet de groupe : Aménagement Feng Shui
+                </h3>
+
+                <div class="flex flex-row items-center justify-between">
+                  <a
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    onclick="plusSlidesMeuble(-1)"
+                    >❮</a
+                  >
+
+                  <div class="slide meuble">
+                    <img src="css/image/meuble_bureau.png" />
+                  </div>
+
+                  <div class="slide meuble">
+                    <img src="css/image/fauteuil.png" />
+                  </div>
+
+                  <div class="slide meuble">
+                    <img src="css/image/lit.png" />
+                  </div>
+
+                  <div class="slide meuble">
+                    <img src="css/image/tables.png" />
+                  </div>
+
+                  <div class="slide meuble">
+                    <img src="css/image/lavabo.png" />
+                  </div>
+
+                  <div class="slide meuble">
+                    <img src="css/image/baignoire.png" />
+                  </div>
+
+                  <a
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    onclick="plusSlidesMeuble(1)"
+                    >❯</a
+                  >
                 </div>
 
-                <div class="slide meuble">
-                  <img src="css/image/fauteuil.png" style="width:65%" />
-                </div>
-
-                <div class="slide meuble">
-                  <img src="css/image/lit.png" style="width:65%" />
-                </div>
-
-                <div class="slide meuble">
-                  <img src="css/image/tables.png" style="width:65%" />
-                </div>
-
-                <div class="slide meuble">
-                  <img src="css/image/lavabo.png" style="width:65%" />
-                </div>
-
-                <div class="slide meuble">
-                  <img src="css/image/baignoire.png" style="width:65%" />
-                </div>
-
-                <a class="prev" onclick="plusSlidesMeuble(-1)">❮</a>
-                <a class="next" onclick="plusSlidesMeuble(1)">❯</a>
-
-                <div class="caption-container">
+                <div
+                  class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+                >
                   <p id="caption meuble">meuble</p>
                 </div>
 
-                <div class="row">
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/meuble_bureau.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(1)"
-                      alt="Meuble de bureau"
-                    />
+                <div class="flex flex-col lg:flex-row">
+                  <div class="flex flex-row">
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/meuble_bureau.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(1)"
+                        alt="Meuble de bureau"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/fauteuil.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(2)"
+                        alt="Fauteuil"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/lit.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(3)"
+                        alt="Lit"
+                      />
+                    </div>
                   </div>
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/fauteuil.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(2)"
-                      alt="Fauteuil"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/lit.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(3)"
-                      alt="Lit"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/tables.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(4)"
-                      alt="Tables basses"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/lavabo.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(5)"
-                      alt="Lavabo"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo meuble cursor"
-                      src="css/image/baignoire.png"
-                      style="width:100%"
-                      onclick="currentSlideMeuble(6)"
-                      alt="Baignoire"
-                    />
+                  <div class="flex flex-row">
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/tables.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(4)"
+                        alt="Tables basses"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/lavabo.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(5)"
+                        alt="Lavabo"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo meuble cursor"
+                        src="css/image/baignoire.png"
+                        style="width:100%"
+                        onclick="currentSlideMeuble(6)"
+                        alt="Baignoire"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -331,98 +360,117 @@
             <p class="ecriture">The Magic Journey</p>
           </li>
           <div id="magic_journey" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_magic">&times;</span>
-              <div class="sous_titre">
-                <h3>Projet de groupe: Décors d'un jeu</h3>
-              </div>
 
-              <div class="slider">
-                <div class="slide magic">
-                  <img src="css/image/ponton.png" style="width:65%" />
+              <div class="slider flex flex-col items-center">
+                <div class="sous_titre">
+                  <h3 class="text-center text-xl">
+                    Projet de groupe: Décors d'un jeu
+                  </h3>
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                  <a
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    onclick="plusSlides(-1)"
+                    >❮</a
+                  >
+
+                  <div class="slide magic">
+                    <img src="css/image/ponton.png" />
+                  </div>
+
+                  <div class="slide magic">
+                    <img src="css/image/tonneau.png" />
+                  </div>
+
+                  <div class="slide magic">
+                    <img src="css/image/brouette.png" />
+                  </div>
+
+                  <div class="slide magic">
+                    <img src="css/image/meuble_cave.png" />
+                  </div>
+
+                  <div class="slide magic">
+                    <img src="css/image/bibliotheque.png" />
+                  </div>
+
+                  <div class="slide magic">
+                    <img src="css/image/porte_chateau.png" />
+                  </div>
+
+                  <a
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2"
+                    onclick="plusSlides(1)"
+                    >❯</a
+                  >
                 </div>
 
-                <div class="slide magic">
-                  <img src="css/image/tonneau.png" style="width:65%" />
-                </div>
-
-                <div class="slide magic">
-                  <img src="css/image/brouette.png" style="width:65%" />
-                </div>
-
-                <div class="slide magic">
-                  <img src="css/image/meuble_cave.png" style="width:65%" />
-                </div>
-
-                <div class="slide magic">
-                  <img src="css/image/bibliotheque.png" style="width:65%" />
-                </div>
-
-                <div class="slide magic">
-                  <img src="css/image/porte_chateau.png" style="width:65%" />
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-
-                <div class="caption-container">
+                <div
+                  class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+                >
                   <p id="caption">décors</p>
                 </div>
 
-                <div class="row">
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/ponton.png"
-                      style="width:100%"
-                      onclick="currentSlide(1)"
-                      alt="Ponton"
-                    />
+                <div class="flex flex-col lg:flex-row">
+                  <div class="flex flex-row">
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/ponton.png"
+                        style="width:100%"
+                        onclick="currentSlide(1)"
+                        alt="Ponton"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/tonneau.png"
+                        style="width:100%"
+                        onclick="currentSlide(2)"
+                        alt="Tonneau"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/brouette.png"
+                        style="width:100%"
+                        onclick="currentSlide(3)"
+                        alt="Brouette"
+                      />
+                    </div>
                   </div>
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/tonneau.png"
-                      style="width:100%"
-                      onclick="currentSlide(2)"
-                      alt="Tonneau"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/brouette.png"
-                      style="width:100%"
-                      onclick="currentSlide(3)"
-                      alt="Brouette"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/meuble_cave.png"
-                      style="width:100%"
-                      onclick="currentSlide(4)"
-                      alt="Meuble"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/bibliotheque.png"
-                      style="width:100%"
-                      onclick="currentSlide(5)"
-                      alt="Bibliothèque"
-                    />
-                  </div>
-                  <div class="column">
-                    <img
-                      class="demo magic cursor"
-                      src="css/image/porte_chateau.png"
-                      style="width:100%"
-                      onclick="currentSlide(6)"
-                      alt="Entrée de château"
-                    />
+                  <div class="flex flex-row">
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/meuble_cave.png"
+                        style="width:100%"
+                        onclick="currentSlide(4)"
+                        alt="Meuble"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/bibliotheque.png"
+                        style="width:100%"
+                        onclick="currentSlide(5)"
+                        alt="Bibliothèque"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo magic cursor"
+                        src="css/image/porte_chateau.png"
+                        style="width:100%"
+                        onclick="currentSlide(6)"
+                        alt="Entrée de château"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -511,7 +559,7 @@
           </li>
 
           <div id="jeu" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_jeu">&times;</span>
               <h3>Développement platformer 2D</h3>
               <iframe
@@ -565,14 +613,14 @@
         </ul>
       </div>
 
-      <section class="carousel">
+      <section class="carousel mb-4">
         <ul class="carousel-items">
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img src="css/image/infographie2D.png" width="100%" />
             <p class="ecriture">Infographie 2D</p>
           </li>
 
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img
               class="image_projet"
               id="aquarelle_img"
@@ -583,7 +631,7 @@
           </li>
 
           <div id="aquarelle" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_aquarelle">&times;</span>
 
               <img
@@ -624,7 +672,7 @@
             };
           </script>
 
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img
               class="image_projet"
               id="pastel_img"
@@ -635,7 +683,7 @@
           </li>
 
           <div id="pastel" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_pastel">&times;</span>
 
               <img
@@ -676,7 +724,7 @@
             };
           </script>
 
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img
               class="image_projet"
               id="marker_img"
@@ -687,7 +735,7 @@
           </li>
 
           <div id="marker" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_marker">&times;</span>
 
               <img
@@ -728,7 +776,7 @@
             };
           </script>
 
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img
               class="image_projet"
               id="peinture_img"
@@ -739,7 +787,7 @@
           </li>
 
           <div id="peinture" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_peinture">&times;</span>
               <img
                 class="w-full mx-auto"
@@ -779,7 +827,7 @@
             };
           </script>
 
-          <li class="carousel-item">
+          <li class="carousel-item py-5">
             <img
               class="image_projet"
               id="inktober_img"
@@ -790,7 +838,7 @@
           </li>
 
           <div id="inktober" class="modal">
-            <div class="modal-content">
+            <div class="modal-content p-2 lg:p-4">
               <span class="close_inktober">&times;</span>
               <img
                 class="w-full mx-auto"
