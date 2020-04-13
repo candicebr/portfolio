@@ -253,7 +253,7 @@
               <div
                 class="caption-container text-2xl lg:text-5xl w-full text-center text-white mt-10"
               >
-                <p id="caption carosse">Personnage Herule en 3D</p>
+                <p id="caption carosse">Personnage Hercule en 3D</p>
               </div>
 
               <div class="video mb-6">
@@ -823,9 +823,207 @@
       <section class="carousel mb-4">
         <ul class="carousel-items">
           <li class="carousel-item py-5">
-            <img src="css/image/infographie2D.png" width="100%" />
+            <img
+              class="image_projet"
+              id="info_img"
+              src="css/image/infographie2D.png"
+              width="100%"
+            />
             <p class="ecriture">Infographie 2D</p>
           </li>
+          <div id="info" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_info">&times;</span>
+
+              <div class="slider flex flex-col items-center">
+                <div class="flex flex-row items-center justify-between mb-4">
+                  <a
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
+                    onclick="plusSlidesinfo(-1)"
+                    >❮</a
+                  >
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/pages_jeu.png"
+                    />
+                  </div>
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/samourai.png"
+                    />
+                  </div>
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/mains.png"
+                    />
+                  </div>
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/santé.png"
+                    />
+                  </div>
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/moyen-age.png"
+                    />
+                  </div>
+
+                  <div class="slide info">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/egypte2.png"
+                    />
+                  </div>
+
+                  <a
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
+                    onclick="plusSlidesinfo(1)"
+                    >❯</a
+                  >
+                </div>
+
+                <div
+                  id="caption_var"
+                  class="caption-container text-base lg:text-2xl w-full text-center text-white py-2 mb-4"
+                >
+                  <p id="caption info">Infographie 2D</p>
+                </div>
+
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/pages_jeu.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(1)"
+                      alt="Interface de jeu"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/samourai.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(2)"
+                      alt="Samourai en peinture digitale"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/mains.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(3)"
+                      alt="Mains réalisées, lors d'un stage, dans un serious game de santée"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/santé.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(4)"
+                      alt="Eléments réalisés, lors d'un stage, dans un serious game de santée"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/moyen-age.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(5)"
+                      alt="Décors d'un jeu 2D, au Moyen-Age"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo info cursor"
+                      src="css/image/egypte2.png"
+                      style="width:100%"
+                      onclick="currentSlideinfo(6)"
+                      alt="Décors d'un jeu 2D, en Egypte"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              var slideIndexinfo = 1;
+              showSlidesinfo(slideIndexinfo);
+
+              function plusSlidesinfo(n) {
+                showSlidesinfo((slideIndexinfo += n));
+              }
+
+              function currentSlideinfo(n) {
+                showSlidesinfo((slideIndexinfo = n));
+              }
+
+              function showSlidesinfo(n) {
+                var i;
+                var slides_info = document.getElementsByClassName("slide info");
+                var dots_info = document.getElementsByClassName("demo info");
+                var captionText = document.getElementById("caption info");
+
+                if (n > slides_info.length) {
+                  slideIndexinfo = 1;
+                }
+                if (n < 1) {
+                  slideIndexinfo = slides_info.length;
+                }
+                for (i = 0; i < slides_info.length; i++) {
+                  slides_info[i].style.display = "none";
+                }
+                for (i = 0; i < dots_info.length; i++) {
+                  dots_info[i].className = dots_info[i].className.replace(
+                    " active",
+                    ""
+                  );
+                }
+                slides_info[slideIndexinfo - 1].style.display = "block";
+                dots_info[slideIndexinfo - 1].className += " active";
+                captionText.innerHTML = dots_info[slideIndexinfo - 1].alt;
+              }
+            </script>
+          </div>
+          <script>
+            // Get the modal
+            var modal_info = document.getElementById("info");
+
+            // Get the button that opens the modal
+            var img_info = document.getElementById("info_img");
+
+            // Get the <span> element that closes the modal
+            var span_info = document.getElementsByClassName("close_info")[0];
+
+            // When the user clicks the button, open the modal
+            img_info.onclick = function() {
+              modal_info.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_info.onclick = function() {
+              modal_info.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_info) {
+                modal_info.style.display = "none";
+              }
+            };
+          </script>
 
           <li class="carousel-item py-5">
             <img
