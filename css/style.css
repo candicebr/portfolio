@@ -61,6 +61,7 @@ h1.nom {
   }
 }
 
+
 .photo {
   min-width: 300px;
 }
@@ -79,6 +80,7 @@ footer {
   position: absolute;
   text-align: center;
   font-family: "Spartan", cursive;
+
 }
 
 .top-footer a {
@@ -146,6 +148,8 @@ footer {
   position: absolute;
 }
 
+
+
 /*projet*/
 
 .projet img.image_projet {
@@ -164,6 +168,7 @@ footer {
   visibility: hidden;
   background-color: #ec716a;
   font-family: "Spartan", cursive;
+
 }
 
 .tooltip:hover .tooltiptext {
@@ -191,6 +196,7 @@ footer {
   background-color: #fefefe;
   text-align: right;
   margin: 20px auto;
+
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -212,6 +218,7 @@ div span:focus {
 /*carousel*/
 
 .carousel {
+
   background: repeat-x center url("image/fond_vert.png");
 }
 
@@ -296,6 +303,7 @@ h3 {
   font-family: "Spartan", cursive;
 }
 
+
 .slide img {
   border-style: double;
   border-color: black;
@@ -303,6 +311,7 @@ h3 {
   border-radius: 8px;
   z-index: 1;
 }
+
 
 /*Hide the images by default */
 .slide {
@@ -332,6 +341,7 @@ h3 {
 .caption-container {
   background-color: #ee7674;
   font-family: "Amatic SC", cursive;
+
 }
 
 /* Add a transparency effect for thumnbail images */
