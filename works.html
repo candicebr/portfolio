@@ -120,27 +120,140 @@
           <div id="personnages" class="modal">
             <div class="modal-content p-2 lg:p-4">
               <span class="close_perso">&times;</span>
-              <h3>Hercule</h3>
-              <div class="video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/-83-h2mvZIw"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              
+              <div class="slider flex flex-col items-center">
+                <div class="flex flex-row items-center justify-between">
+                  <a
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
+                    onclick="plusSlidesCarosse(-1)"
+                    >❮</a
+                  >
+
+                  <div class="slide carosse">
+                    <img src="css/image/carosse1.png" />
+                  </div>
+
+                  <div class="slide carosse">
+                    <img src="css/image/carosse2.png" />
+                  </div>
+
+                  <div class="slide carosse">
+                    <img src="css/image/carosse3.png" />
+                  </div>
+
+                  <a
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
+                    onclick="plusSlidesCarosse(1)"
+                    >❯</a
+                  >
+                </div>
+
+                <div
+                  class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+                >
+                  <p id="caption carosse">carosse</p>
+                </div>
+
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse1.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(1)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse2.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(2)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse3.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(3)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                </div>
               </div>
-              <h3>Mickey</h3>
-              <div class="video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/OQttu-yUBh0?loop=1"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; loop"
-                  allowfullscreen
-                ></iframe>
+
+              <script>
+                var slideIndexCarosse = 1;
+                showSlidesCarosse(slideIndexCarosse);
+
+                function plusSlidesCarosse(n) {
+                  showSlidesCarosse((slideIndexCarosse += n));
+                }
+
+                function currentSlideCarosse(n) {
+                  showSlidesCarosse((slideIndexCarosse = n));
+                }
+
+                function showSlidesCarosse(n) {
+                  var i;
+                  var slides_carosse = document.getElementsByClassName(
+                    "slide carosse"
+                  );
+                  var dots_carosse = document.getElementsByClassName(
+                    "demo carosse"
+                  );
+                  var captionText_carosse = document.getElementById(
+                    "caption carosse"
+                  );
+                  if (n > slides_carosse.length) {
+                    slideIndexCarosse = 1;
+                  }
+                  if (n < 1) {
+                    slideIndexCarosse = slides_carosse.length;
+                  }
+                  for (i = 0; i < slides_carosse.length; i++) {
+                    slides_carosse[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots_carosse.length; i++) {
+                    dots_carosse[i].className = dots_carosse[
+                      i
+                    ].className.replace(" active", "");
+                  }
+                  slides_carosse[slideIndexCarosse - 1].style.display = "block";
+                  dots_carosse[slideIndexCarosse - 1].className += " active";
+                  captionText_carosse.innerHTML =
+                    dots_carosse[slideIndexCarosse - 1].alt;
+                }
+              </script>
+              <div class="flex flex-col items-center">
+                <h3>Théière transformée en carosse</h3>
+                <h3>Robot</h3>
+
+                <h3>Hercule</h3>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/-83-h2mvZIw"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <h3>Mickey</h3>
+                <div class="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/OQttu-yUBh0?loop=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; loop"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
