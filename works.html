@@ -120,7 +120,7 @@
           <div id="personnages" class="modal">
             <div class="modal-content p-2 lg:p-4">
               <span class="close_perso">&times;</span>
-              
+
               <div class="slider flex flex-col items-center">
                 <div class="flex flex-row items-center justify-between">
                   <a
@@ -130,15 +130,24 @@
                   >
 
                   <div class="slide carosse">
-                    <img src="css/image/carosse1.png" />
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse1.png"
+                    />
                   </div>
 
                   <div class="slide carosse">
-                    <img src="css/image/carosse2.png" />
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse2.png"
+                    />
                   </div>
 
                   <div class="slide carosse">
-                    <img src="css/image/carosse3.png" />
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse3.png"
+                    />
                   </div>
 
                   <a
@@ -151,7 +160,7 @@
                 <div
                   class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
                 >
-                  <p id="caption carosse">carosse</p>
+                  <p id="caption carosse">Théière transformée en carosse</p>
                 </div>
 
                 <div class="flex flex-row">
@@ -205,9 +214,7 @@
                   var dots_carosse = document.getElementsByClassName(
                     "demo carosse"
                   );
-                  var captionText_carosse = document.getElementById(
-                    "caption carosse"
-                  );
+
                   if (n > slides_carosse.length) {
                     slideIndexCarosse = 1;
                   }
@@ -224,36 +231,40 @@
                   }
                   slides_carosse[slideIndexCarosse - 1].style.display = "block";
                   dots_carosse[slideIndexCarosse - 1].className += " active";
-                  captionText_carosse.innerHTML =
-                    dots_carosse[slideIndexCarosse - 1].alt;
                 }
               </script>
-              <div class="flex flex-col items-center">
-                <h3>Théière transformée en carosse</h3>
-                <h3>Robot</h3>
 
-                <h3>Hercule</h3>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/-83-h2mvZIw"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+              <div
+                class="relative flex my-4 flex-row items-center justify-between"
+              >
+                <img class="pr-4" src="css/image/robot_image.png" alt="robot" />
+                <div
+                  class="flex flex-col absolute right-0 items-center justify-between w-1/4"
+                >
+                  <img src="css/image/robot1.png" alt="robot" />
+                  <img src="css/image/robot2.png" alt="robot" />
                 </div>
-                <h3>Mickey</h3>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/OQttu-yUBh0?loop=1"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; loop"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+              </div>
+
+              <div class="video my-4">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/-83-h2mvZIw"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video my-4">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/OQttu-yUBh0?loop=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; loop"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
           </div>
@@ -299,114 +310,108 @@
             <div class="modal-content p-2 lg:p-4">
               <span class="close">&times;</span>
 
-              <div class="slider flex flex-col items-center">
-                <h3 class="text-center lg:text-xl">
-
-                  Projet de groupe : Aménagement Feng Shui
-                </h3>
-
-                <div class="flex flex-row items-center justify-between">
-                  <a
-                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
-                    onclick="plusSlidesMeuble(-1)"
-                    >❮</a
-                  >
-
-                  <div class="slide meuble">
-                    <img src="css/image/meuble_bureau.png" />
-                  </div>
-
-                  <div class="slide meuble">
-                    <img src="css/image/fauteuil.png" />
-                  </div>
-
-                  <div class="slide meuble">
-                    <img src="css/image/lit.png" />
-                  </div>
-
-                  <div class="slide meuble">
-                    <img src="css/image/tables.png" />
-                  </div>
-
-                  <div class="slide meuble">
-                    <img src="css/image/lavabo.png" />
-                  </div>
-
-                  <div class="slide meuble">
-                    <img src="css/image/baignoire.png" />
-                  </div>
-
-                  <a
-                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
-                    onclick="plusSlidesMeuble(1)"
-                    >❯</a
-                  >
-                </div>
-
-                <div
-                  class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+              <div class="flex flex-row items-center justify-between">
+                <a
+                  class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
+                  onclick="plusSlidesMeuble(-1)"
+                  >❮</a
                 >
-                  <p id="caption meuble">meuble</p>
+
+
+                <div class="slide meuble">
+                  <img src="css/image/meuble_bureau.png" />
                 </div>
 
-                <div class="flex flex-col lg:flex-row">
-                  <div class="flex flex-row">
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/meuble_bureau.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(1)"
-                        alt="Meuble de bureau"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/fauteuil.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(2)"
-                        alt="Fauteuil"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/lit.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(3)"
-                        alt="Lit"
-                      />
-                    </div>
+                <div class="slide meuble">
+                  <img src="css/image/fauteuil.png" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/lit.png" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/tables.png" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/lavabo.png" />
+                </div>
+
+                <div class="slide meuble">
+                  <img src="css/image/baignoire.png" />
+                </div>
+
+                <a
+                  class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
+                  onclick="plusSlidesMeuble(1)"
+                  >❯</a
+                >
+              </div>
+
+              <div
+                class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+              >
+                <p id="caption meuble">Meubles Feng Shui</p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row">
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/meuble_bureau.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(1)"
+                      alt="Meuble de bureau"
+                    />
                   </div>
-                  <div class="flex flex-row">
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/tables.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(4)"
-                        alt="Tables basses"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/lavabo.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(5)"
-                        alt="Lavabo"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo meuble cursor"
-                        src="css/image/baignoire.png"
-                        style="width:100%"
-                        onclick="currentSlideMeuble(6)"
-                        alt="Baignoire"
-                      />
-                    </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/fauteuil.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(2)"
+                      alt="Fauteuil"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/lit.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(3)"
+                      alt="Lit"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/tables.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(4)"
+                      alt="Tables basses"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/lavabo.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(5)"
+                      alt="Lavabo"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo meuble cursor"
+                      src="css/image/baignoire.png"
+                      style="width:100%"
+                      onclick="currentSlideMeuble(6)"
+                      alt="Baignoire"
+                    />
                   </div>
                 </div>
               </div>
@@ -431,9 +436,9 @@
                   var dots_meuble = document.getElementsByClassName(
                     "demo meuble"
                   );
-                  var captionText_meuble = document.getElementById(
-                    "caption meuble"
-                  );
+                  //var captionText_meuble = document.getElementById(
+                  //"caption meuble"
+                  //);
                   if (n > slides_meuble.length) {
                     slideIndexMeuble = 1;
                   }
@@ -451,8 +456,8 @@
                   }
                   slides_meuble[slideIndexMeuble - 1].style.display = "block";
                   dots_meuble[slideIndexMeuble - 1].className += " active";
-                  captionText_meuble.innerHTML =
-                    dots_meuble[slideIndexMeuble - 1].alt;
+                  //captionText_meuble.innerHTML =
+                  dots_meuble[slideIndexMeuble - 1].alt;
                 }
               </script>
             </div>
@@ -498,115 +503,108 @@
             <div class="modal-content p-2 lg:p-4">
               <span class="close_magic">&times;</span>
 
-              <div class="slider flex flex-col items-center">
-                <div class="sous_titre">
-                  <h3 class="text-center text-xl">
-                    Projet de groupe: Décors d'un jeu
-                  </h3>
-
-                </div>
-                <div class="flex flex-row items-center justify-between">
-                  <a
-                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
-                    onclick="plusSlides(-1)"
-                    >❮</a
-                  >
-
-                  <div class="slide magic">
-                    <img src="css/image/ponton.png" />
-                  </div>
-
-                  <div class="slide magic">
-                    <img src="css/image/tonneau.png" />
-                  </div>
-
-                  <div class="slide magic">
-                    <img src="css/image/brouette.png" />
-                  </div>
-
-                  <div class="slide magic">
-                    <img src="css/image/meuble_cave.png" />
-                  </div>
-
-                  <div class="slide magic">
-                    <img src="css/image/bibliotheque.png" />
-                  </div>
-
-                  <div class="slide magic">
-                    <img src="css/image/porte_chateau.png" />
-                  </div>
-
-                  <a
-                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
-                    onclick="plusSlides(1)"
-                    >❯</a
-                  >
-                </div>
-
-                <div
-                  class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+              <div class="flex flex-row items-center justify-between">
+                <a
+                  class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
+                  onclick="plusSlides(-1)"
+                  >❮</a
                 >
-                  <p id="caption">décors</p>
+
+
+                <div class="slide magic">
+                  <img src="css/image/ponton.png" />
                 </div>
 
-                <div class="flex flex-col lg:flex-row">
-                  <div class="flex flex-row">
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/ponton.png"
-                        style="width:100%"
-                        onclick="currentSlide(1)"
-                        alt="Ponton"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/tonneau.png"
-                        style="width:100%"
-                        onclick="currentSlide(2)"
-                        alt="Tonneau"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/brouette.png"
-                        style="width:100%"
-                        onclick="currentSlide(3)"
-                        alt="Brouette"
-                      />
-                    </div>
+                <div class="slide magic">
+                  <img src="css/image/tonneau.png" />
+                </div>
+
+                <div class="slide magic">
+                  <img src="css/image/brouette.png" />
+                </div>
+
+                <div class="slide magic">
+                  <img src="css/image/meuble_cave.png" />
+                </div>
+
+                <div class="slide magic">
+                  <img src="css/image/bibliotheque.png" />
+                </div>
+
+                <div class="slide magic">
+                  <img src="css/image/porte_chateau.png" />
+                </div>
+
+                <a
+                  class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
+                  onclick="plusSlides(1)"
+                  >❯</a
+                >
+              </div>
+
+              <div
+                class="caption-container text-2xl lg:text-5xl w-full text-center text-white"
+              >
+                <p id="caption">Décors d'un jeu 3D</p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row">
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/ponton.png"
+                      style="width:100%"
+                      onclick="currentSlide(1)"
+                      alt="Ponton"
+                    />
                   </div>
-                  <div class="flex flex-row">
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/meuble_cave.png"
-                        style="width:100%"
-                        onclick="currentSlide(4)"
-                        alt="Meuble"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/bibliotheque.png"
-                        style="width:100%"
-                        onclick="currentSlide(5)"
-                        alt="Bibliothèque"
-                      />
-                    </div>
-                    <div class="column">
-                      <img
-                        class="demo magic cursor"
-                        src="css/image/porte_chateau.png"
-                        style="width:100%"
-                        onclick="currentSlide(6)"
-                        alt="Entrée de château"
-                      />
-                    </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/tonneau.png"
+                      style="width:100%"
+                      onclick="currentSlide(2)"
+                      alt="Tonneau"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/brouette.png"
+                      style="width:100%"
+                      onclick="currentSlide(3)"
+                      alt="Brouette"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/meuble_cave.png"
+                      style="width:100%"
+                      onclick="currentSlide(4)"
+                      alt="Meuble"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/bibliotheque.png"
+                      style="width:100%"
+                      onclick="currentSlide(5)"
+                      alt="Bibliothèque"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo magic cursor"
+                      src="css/image/porte_chateau.png"
+                      style="width:100%"
+                      onclick="currentSlide(6)"
+                      alt="Entrée de château"
+                    />
                   </div>
                 </div>
               </div>
@@ -627,7 +625,7 @@
                   var i;
                   var slides = document.getElementsByClassName("slide magic");
                   var dots = document.getElementsByClassName("demo magic");
-                  var captionText = document.getElementById("caption");
+                  //var captionText = document.getElementById("caption");
                   if (n > slides.length) {
                     slideIndex = 1;
                   }
@@ -645,7 +643,7 @@
                   }
                   slides[slideIndex - 1].style.display = "block";
                   dots[slideIndex - 1].className += " active";
-                  captionText.innerHTML = dots[slideIndex - 1].alt;
+                  //captionText.innerHTML = dots[slideIndex - 1].alt;
                 }
               </script>
             </div>
