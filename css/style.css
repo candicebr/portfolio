@@ -125,10 +125,14 @@ footer {
   .container2 {
     background: repeat-x bottom url("image/fond.png");
   }
+}
 
-  .caption-container {
-    font-family: "Freestyle Script Regular", cursive;
-  }
+.caption-container {
+  font-family: "Freestyle Script Regular", cursive;
+}
+
+#caption_var {
+  font-family: "Spartan", cursive;
 }
 
 .video {
