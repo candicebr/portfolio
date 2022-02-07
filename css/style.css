@@ -15,7 +15,6 @@
 
 /*menu*/
 h1.titre {
-  font-family: "Amatic SC", cursive;
   background: #d0d6b5;
 }
 
@@ -29,12 +28,6 @@ header {
 
 .nav_li {
   font-family: "Spartan", cursive;
-}
-
-/*index*/
-
-h1.nom {
-  font-family: "Amatic SC", cursive;
 }
 
 /*a propos*/

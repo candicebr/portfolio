@@ -1,0 +1,67 @@
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.projet {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -300px;
+}
+
+.section .background {
+    height: 200px;
+    background-color: #EE7674;
+    margin-top: 6%;
+}
+
+.section .background2 {
+    background-color: #FDCFB7;
+    height: 30px;
+}
+.box {
+    width: 60%;
+}
+.visuel {
+    display: flex;
+    justify-content: space-between;
+}
+.visuel img {
+    max-width: 30%;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+.description {
+    margin-top: 20px;
+    font-family: "Spartan", cursive;
+    font-size: large;
+}
+
+.item {
+    width: 30%;
+}
+
+.image {
+    max-width: 400px;
+    min-height: 400px;
+    padding: 1.5rem;
+    color: white;
+}
+
+.image div {
+    margin-bottom: 1rem;
+}
+
+.image p {
+    font-size: large;
+    font-family: "Spartan", cursive;
+}
+
+.image h3 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.bouton_projet {
+    text-align: center;
+}

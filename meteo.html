@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/info.css" />
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+
+    <link rel="icon" href="logo.ico" />
+  </head>
+
+  <body>
+    <header>
+      <a id="titre" href="index.html">
+        <h1
+          class="titre mt-0 text-center text-3xl md:text-4xl font-semibold text-black hover:text-gray-700 duration-500"
+        >
+          Portfolio
+        </h1></a
+      >
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+            <li class="retour"><a href="works.html"><</a></li>
+            <li class="logo">
+              <a href="index.html">
+                <img src="css/image/logo.png">
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li class="active"><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+
+        <div class="projet">
+            <div class="box">
+                <div class="visuel">
+                <img src="css/image/meteo1.png">
+                <img src="css/image/meteo2.png">
+                <img src="css/image/meteo3.png">
+                </div>
+                <div class="description"><p>Application météo utilisant l'API Openweathermap</p></div>
+            </div>
+            <div class="item">
+                <a
+                id="bonkoin"
+                href="https://github.com/candicebr/MeteoApp"
+                target="_blank"
+                >
+                <div class="polaroid">
+                    <div class="image">
+                        <div>
+                            <h3>Date</h3>
+                            <p>2020 - DUT Informatique</p>
+                        </div>
+                        <div>
+                            <h3>Rôle et domaine</h3>
+                            <p>Développement Back-End | API</p>
+                        </div>
+                        <div>
+                            <h3>Outils et compétences</h3>
+                            <p>HTML | CSS | JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="caption">Voir le projet</div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
