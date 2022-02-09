@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
 
@@ -21,36 +22,31 @@
 
   <body>
     <header>
-      <a id="titre" href="index.html">
-        <h1
-          class="titre mt-0 text-center text-3xl md:text-4xl font-semibold text-black hover:text-gray-700 duration-500"
-        >
-          Candice BRANCHEREAU
-        </h1></a
-      >
-      <nav class="menu h-12 border-b-4 border-double border-black">
-        <ul
-          class="flex flex-row justify-center text-xl md:text-2xl items-end mt-2"
-        >
-          <li class="nav_li mt-4 md:mt-3">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-              href="works.html"
-              >Projets</a
-            >
-          </li>
-          <li class="nav_li">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-              href="about.html"
-              >A propos</a
-            >
-          </li>
-        </ul>
+      <div class="head-title"><h1>Candice Branchereau</h1></div>
+      <div class="head-background"></div>
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+            <li class="retour"><a href="works.html"><</a></li>
+            <li class="logo">
+              <a href="index.html">
+                <img src="css/image/logo.png">
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li class="active"><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
+      <div class="nav-space"></div>
 
       <div id="section1" class="section"><h1>INFO</h1><div class = "background"></div><div class = "background2"></div>
 
