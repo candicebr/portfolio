@@ -62,24 +62,30 @@
           </div>
 
           <div class="item">
+            <a href="openGL.html">
             <div class="polaroid">
               <div class="image"><img src="css/image/plim.png"></div>
               <div class="caption">OpenGL</div>
             </div>
+            </a>
           </div>
         
           <div class="item">
+            <a href="recoding.html">
             <div class="polaroid">
               <div class="image"><img src="css/image/recoding.png"></div>
               <div class="caption">Recoding</div>
             </div>
+            </a>
           </div>
 
           <div class="item">
+            <a href="reversi.html">
             <div class="polaroid">
               <div class="image"><img src="css/image/reversi.png"></div>
               <div class="caption">Reversi en C++</div>
             </div>
+            </a>
           </div>
         
         </div>
@@ -90,19 +96,6 @@
       <div id="section2" class="section"><h1>WEB</h1><div class = "background"></div><div class = "background2"></div>
 
         <div class="wrapper">
-
-         <!-- <div class="item">
-            <a
-              id="bonkoin"
-              href="https://bonkoin.herokuapp.com"
-              target="_blank"
-            >
-            <div class="polaroid">
-              <div class="imageborder"><img src="css/image/logo_lebonkoin.png"></div>
-              <div class="caption">Bonkoin</div>
-            </div>
-            </a>
-          </div>-->
 
           <div class="item">
             <a
@@ -126,10 +119,12 @@
           </div>
         
           <div class="item">
+            <a href="unimac.html">
             <div class="polaroid">
               <div class="image"><img src="css/image/logo_unimac.png"></div>
               <div class="caption">Unimac</div>
             </div>
+            </a>
           </div>
         
         </div>
@@ -141,28 +136,263 @@
         <div class="wrapper">
 
           <div class="item">
-            <div class="polaroid">
-              <div class="image"><img src="css/image/natureMorte.png"></div>
+            <div class="polaroid" id="natureMorte_img">
+              <div class="image"><img src="css/image/polaroid_natureMorte.png"></div>
               <div class="caption">Nature Morte</div>
             </div>
           </div>
 
+          <div id="natureMorte" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_natureMorte">&times;</span>
+
+              <img
+                class="w-full mx-auto"
+                src="css/image/natureMorte.png"
+                alt="natureMorte"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_natureMorte = document.getElementById("natureMorte");
+
+            // Get the button that opens the modal
+            var img_natureMorte = document.getElementById("natureMorte_img");
+
+            // Get the <span> element that closes the modal
+            var span_natureMorte = document.getElementsByClassName(
+              "close_natureMorte"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_natureMorte.onclick = function() {
+              modal_natureMorte.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_natureMorte.onclick = function() {
+              modal_natureMorte.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_natureMorte) {
+                modal_natureMorte.style.display = "none";
+              }
+            };
+          </script>
+
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="robot_img">
               <div class="image"><img src="css/image/robot.png"></div>
               <div class="caption">Robot</div>
             </div>
           </div>
+
+          <div id="robot" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_robot">&times;</span>
+
+            <div
+              class="relative flex mt-4 mb-10 flex-row items-center justify-between"
+            >
+              <img class="pr-4" src="css/image/robot_image.png" alt="robot" />
+              <div
+                class="flex flex-col absolute right-0 items-center justify-between w-1/4"
+              >
+                <img src="css/image/robot1.png" alt="robot" />
+                <img src="css/image/robot2.png" alt="robot" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal_robot = document.getElementById("robot");
+
+          // Get the button that opens the modal
+          var img_robot = document.getElementById("robot_img");
+
+          // Get the <span> element that closes the modal
+          var span_robot = document.getElementsByClassName(
+            "close_robot"
+          )[0];
+
+          // When the user clicks the button, open the modal
+          img_robot.onclick = function() {
+            modal_robot.style.display = "block";
+          };
+
+          // When the user clicks on <span> (x), close the modal
+          span_robot.onclick = function() {
+            modal_robot.style.display = "none";
+          };
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal_robot) {
+              modal_robot.style.display = "none";
+            }
+          };
+        </script>
+
         
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="carosse_img">
               <div class="image"><img src="css/image/carosse.png"></div>
               <div class="caption">Theière Carosse</div>
             </div>
           </div>
-        
-        </div>
 
+          <div id="carosse" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_carosse">&times;</span>
+
+              <div class="slider flex flex-col items-center">
+                <div class="flex flex-row items-center justify-between mb-4">
+                  <a
+                    class="prev lg:mr-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-l-lg"
+                    onclick="plusSlidesCarosse(-1)"
+                    >❮</a
+                  >
+
+                  <div class="slide carosse">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse1.png"
+                    />
+                  </div>
+
+                  <div class="slide carosse">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse2.png"
+                    />
+                  </div>
+
+                  <div class="slide carosse">
+                    <img
+                      class="mr-auto ml-auto md:w-10/12"
+                      src="css/image/carosse3.png"
+                    />
+                  </div>
+
+                  <a
+                    class="next lg:ml-12 text-lg lg:text-4xl px-1 lg:px-2 rounded-r-lg"
+                    onclick="plusSlidesCarosse(1)"
+                    >❯</a
+                  >
+                </div>
+
+                <div class="flex flex-row">
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse1.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(1)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse2.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(2)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="demo carosse cursor"
+                      src="css/image/carosse3.png"
+                      style="width:100%"
+                      onclick="currentSlideCarosse(3)"
+                      alt="Théière transformée en carosse"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                var slideIndexCarosse = 1;
+                showSlidesCarosse(slideIndexCarosse);
+
+                function plusSlidesCarosse(n) {
+                  showSlidesCarosse((slideIndexCarosse += n));
+                }
+
+                function currentSlideCarosse(n) {
+                  showSlidesCarosse((slideIndexCarosse = n));
+                }
+
+                function showSlidesCarosse(n) {
+                  var i;
+                  var slides_carosse = document.getElementsByClassName(
+                    "slide carosse"
+                  );
+                  var dots_carosse = document.getElementsByClassName(
+                    "demo carosse"
+                  );
+
+                  if (n > slides_carosse.length) {
+                    slideIndexCarosse = 1;
+                  }
+                  if (n < 1) {
+                    slideIndexCarosse = slides_carosse.length;
+                  }
+                  for (i = 0; i < slides_carosse.length; i++) {
+                    slides_carosse[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots_carosse.length; i++) {
+                    dots_carosse[i].className = dots_carosse[
+                      i
+                    ].className.replace(" active", "");
+                  }
+                  slides_carosse[slideIndexCarosse - 1].style.display = "block";
+                  dots_carosse[slideIndexCarosse - 1].className += " active";
+                }
+              </script>
+
+              <script>
+                // Get the modal
+                var modal_carosse = document.getElementById("carosse");
+
+                // Get the button that opens the modal
+                var img_carosse = document.getElementById("carosse_img");
+
+                // Get the <span> element that closes the modal
+                var span_carosse = document.getElementsByClassName(
+                  "close_carosse"
+                )[0];
+
+                // When the user clicks the button, open the modal
+                img_carosse.onclick = function() {
+                  modal_carosse.style.display = "block";
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                span_carosse.onclick = function() {
+                  modal_carosse.style.display = "none";
+                };
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal_carosse) {
+                    modal_carosse.style.display = "none";
+                  }
+                };
+              </script>
+
+            </div>
+        
+          </div>
+
+        </div>
       </div>
 
       <div id="section4" class="section"><h1>ART</h1><div class = "background"></div><div class = "background2"></div>
@@ -170,52 +400,254 @@
         <div class="wrapper">
 
           <div class="item">
-            <div class="polaroid">
-              <div class="image"><img src="css/image/art_infographie2D.png"></div>
-              <div class="caption">Infographie 2D</div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="aquarelle_img">
               <div class="image"><img src="css/image/art_aquarelle.png"></div>
               <div class="caption">Aquarelle</div>
             </div>
           </div>
+
+          <div id="aquarelle" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_aquarelle">&times;</span>
+
+              <img
+                class="mx-auto width-full"
+                src="css/image/polaroid.png"
+                alt="aquarelle"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_aquarelle = document.getElementById("aquarelle");
+
+            // Get the button that opens the modal
+            var img_aquarelle = document.getElementById("aquarelle_img");
+
+            // Get the <span> element that closes the modal
+            var span_aquarelle = document.getElementsByClassName(
+              "close_aquarelle"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_aquarelle.onclick = function() {
+              modal_aquarelle.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_aquarelle.onclick = function() {
+              modal_aquarelle.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_aquarelle) {
+                modal_aquarelle.style.display = "none";
+              }
+            };
+          </script>
         
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="pastel_img">
               <div class="image"><img src="css/image/art_pastel.png"></div>
               <div class="caption">Pastel</div>
             </div>
           </div>
 
+          <div id="pastel" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_pastel">&times;</span>
+
+              <img
+                class="w-full mx-auto"
+                src="css/image/polaroid_pastel.png"
+                alt="pastel"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_pastel = document.getElementById("pastel");
+
+            // Get the button that opens the modal
+            var img_pastel = document.getElementById("pastel_img");
+
+            // Get the <span> element that closes the modal
+            var span_pastel = document.getElementsByClassName(
+              "close_pastel"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_pastel.onclick = function() {
+              modal_pastel.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_pastel.onclick = function() {
+              modal_pastel.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_pastel) {
+                modal_pastel.style.display = "none";
+              }
+            };
+          </script>
+
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="marker_img">
               <div class="image"><img src="css/image/art_marker.png"></div>
               <div class="caption">Marker</div>
             </div>
           </div>
 
+          <div id="marker" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_marker">&times;</span>
+
+              <img
+                class="w-full mx-auto"
+                src="css/image/polaroid_marker.png"
+                alt="pastel"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_marker = document.getElementById("marker");
+
+            // Get the button that opens the modal
+            var img_marker = document.getElementById("marker_img");
+
+            // Get the <span> element that closes the modal
+            var span_marker = document.getElementsByClassName(
+              "close_marker"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_marker.onclick = function() {
+              modal_marker.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_marker.onclick = function() {
+              modal_marker.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_marker) {
+                modal_marker.style.display = "none";
+              }
+            };
+          </script>
+
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="peinture_img">
               <div class="image"><img src="css/image/art_peinture.png"></div>
               <div class="caption">Peinture</div>
             </div>
           </div>
 
+          <div id="peinture" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_peinture">&times;</span>
+              <img
+                class="w-full mx-auto"
+                src="css/image/polaroid_peinture.png"
+                alt="peinture"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_peinture = document.getElementById("peinture");
+
+            // Get the button that opens the modal
+            var img_peinture = document.getElementById("peinture_img");
+
+            // Get the <span> element that closes the modal
+            var span_peinture = document.getElementsByClassName(
+              "close_peinture"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_peinture.onclick = function() {
+              modal_peinture.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_peinture.onclick = function() {
+              modal_peinture.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_peinture) {
+                modal_peinture.style.display = "none";
+              }
+            };
+          </script>
+
           <div class="item">
-            <div class="polaroid">
+            <div class="polaroid" id="inktober_img">
               <div class="image"><img src="css/image/art_dessin.png"></div>
               <div class="caption">Dessin</div>
             </div>
           </div>
+
+          
+          <div id="inktober" class="modal">
+            <div class="modal-content p-2 lg:p-4">
+              <span class="close_inktober">&times;</span>
+              <img
+                class="w-full mx-auto"
+                src="css/image/polaroid_dessin2.png"
+                alt="dessin"
+              />
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal_inktober = document.getElementById("inktober");
+
+            // Get the button that opens the modal
+            var img_inktober = document.getElementById("inktober_img");
+
+            // Get the <span> element that closes the modal
+            var span_inktober = document.getElementsByClassName(
+              "close_inktober"
+            )[0];
+
+            // When the user clicks the button, open the modal
+            img_inktober.onclick = function() {
+              modal_inktober.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_inktober.onclick = function() {
+              modal_inktober.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal_inktober) {
+                modal_inktober.style.display = "none";
+              }
+            };
+          </script>
         
         </div>
 
       </div>
 
-
+      <!--
 
       <div class="fond">
 
@@ -1457,6 +1889,8 @@
           </script>
         </ul>
       </section>
+                    -->
+
     </main>
   </body>
 </html>

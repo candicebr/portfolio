@@ -4,7 +4,7 @@ body {
 }
 
 .projet {
-    padding: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
     display: flex;
     justify-content: space-between;
     margin-top: -300px;
@@ -23,6 +23,9 @@ body {
 .box {
     width: 60%;
 }
+.box div{
+    margin-bottom: 1rem;
+}
 .visuel {
     display: flex;
     justify-content: space-between;
@@ -34,11 +37,13 @@ body {
 .description {
     margin-top: 20px;
     font-family: "Spartan", cursive;
-    font-size: large;
+    font-size: medium;
+    color: rgb(100, 100, 100);
 }
 
 .item {
-    width: 30%;
+    width: 450px;
+    height: 450px;
 }
 
 .image {
@@ -65,3 +70,22 @@ body {
 .bouton_projet {
     text-align: center;
 }
+
+#recoding {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Spartan", cursive;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#recoding img {
+    width: 270px;
+}
+
+#recoding h2{
+    color: rgb(139, 139, 139);
+    padding: 4px;
+}
+
+
