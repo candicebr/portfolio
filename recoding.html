@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/info.css" />
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+
+    <link rel="icon" href="logo.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head-title"><h1>Portfolio</h1></div>
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+            <a href="works.html"><li class="retour"><</li></a>
+            <li class="logo">
+              <a href="index.html">
+                <img src="css/image/logo.png">
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li class="active"><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="nav-space"></div>
+
+        <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+
+        <div class="projet">
+            <div class="box">
+                <div id="recoding">
+                    <div>
+                        <img src="css/image/orginalCreativeCoding.jpg">
+                        <h2>Oeuvre original</h2>
+                    </div>
+                    <div>
+                        <img src="css/image/recoding2.png">
+                        <h2>Oeuvre réalisée - Methode 1</h2>
+                    </div>
+                    <div>
+                        <img src="css/image/recoding.png">
+                        <h2>Oeuvre réalisée - Methode 2</h2>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Projet de reflexion d'un code pour reproduire une oeuvre.</p>
+                    <p>Il fallait proposer deux méthodes différentes. La première est une simple incrémentation et la seconde utilise le principe de noise.</p>
+                    <p>Les codes sont basés sur de l'aléatoire, on peut tester différentes configurations, comme la variations de longueur des traits, le nombre de rosaces ou encore la taille.</p>
+                </div>
+                <div>
+                    <a href="https://candicebr.github.io/Recoding_ColourComposition/">
+                    <button class="text-xl rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500">Tester</button></a>
+                </div>
+                </div>
+            <div class="item">
+                <a
+                id="bonkoin"
+                href="https://github.com/candicebr/Recoding_ColourComposition"
+                target="_blank"
+                >
+                <div class="polaroid">
+                    <div class="image">
+                        <div>
+                            <h3>Date</h3>
+                            <p>2021 - IMAC 1</p>
+                        </div>
+                        <div>
+                            <h3>Rôle et domaine</h3>
+                            <p>Creative Coding</p>
+                        </div>
+                        <div>
+                            <h3>Outils et compétences</h3>
+                            <p>p5.js</p>
+                        </div>
+                    </div>
+                    <div class="caption">Voir le projet</div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
