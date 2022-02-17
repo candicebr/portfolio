@@ -14,62 +14,61 @@
     />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
 
     <link rel="icon" href="logo.ico" />
   </head>
 
   <body>
     <header>
-      <a id="titre" href="index.html">
-        <h1
-          class="titre mt-0 text-center text-3xl md:text-4xl font-semibold text-black hover:text-gray-700 duration-500"
-        >
-          Portfolio
-        </h1></a
-      >
-      <nav class="menu h-12 border-b-4 border-double border-black">
-        <ul
-          class="flex flex-row justify-center text-xl md:text-2xl items-end mt-2"
-        >
-          <li class="nav_li mt-4 md:mt-3">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-              href="works.html"
-              >Projets</a
-            >
-          </li>
-          <li class="nav_li">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-              href="about.html"
-              >A propos</a
-            >
-          </li>
-        </ul>
+      <div class="head-title">
+        <a href="index.html">
+          <h1>Portfolio</h1>
+        </a>
+        
+      </div>
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div
-        class="index flex md:flex-row flex-col justify-between md:pb-24 px-6 lg:px-32 items-center"
-      >
-        <img class="photo" src="css/image/index.png" alt="index" />
+      <div class="nav-space"></div>
 
-        <div class="flex flex-col items-center lg:mr-32 mt-8" id="index">
-          <h1
-            class="nom md:text-white md:mt-64 text-5xl md:text-6xl text-center"
-          >
+      <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+        <div class="index">
+          <div class="item">
+            <div class="polaroid">
+              <div class="image"><img class="photo" src="css/image/logo.png" alt="index" /></div>
+              <div class="caption">Développement 3D</div>
+            </div>
+          </div>
 
-            Candice Branchereau
-          </h1>
-          <div class="bouton_projet mt-6 mb-4 md:mt-32">
-            <a href="works.html"
-              ><button
-                class="text-xl rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+          <div class="info">
+            <h1>
+              Candice Branchereau
+            </h1>
+            <div class="bouton_projet mt-6 mb-4">
+              <a href="works.html"
+                ><button
+                  class="text-xl rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+                >
+                  Découvrez mes projets
+                </button></a
               >
-                Découvrez mes projets
-              </button></a
-            >
+            </div>
           </div>
         </div>
       </div>

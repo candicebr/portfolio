@@ -1,0 +1,47 @@
+.section .background {
+    height: 250px;
+    background-color: #EE7674;
+    margin-top: 12%;
+}
+
+.section .background2 {
+    background-color: #FDCFB7;
+    height: 30px;
+}
+
+.profil .item{
+    width: 40%;
+}
+
+.profil .image{
+    min-width: 400px;
+    height: 400px;
+}
+
+.profil .polaroid:hover {
+    cursor: default;
+}
+
+.profil p{
+    font-family: "Spartan", cursive;
+    color: white;
+    text-justify: auto;
+}
+
+.profil {
+    text-align: center;
+    margin-top: -480px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem 0 10rem;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 250px;
+    height: 350px;
+    width: 50%;
+}
