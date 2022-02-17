@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/info.css" />
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+
+    <link rel="icon" href="logo.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head-title">
+        <a href="index.html">
+          <img src="css/image/logo.png">
+        </a>
+        <a href="index.html">
+          <h1>Candice Branchereau</h1>
+        </a>
+        
+      </div>
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+            <a href="works.html"><li class="active"><</li></a>
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="nav-space"></div>
+
+        <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+
+        <div class="projet">
+            <div class="box">
+                <div class="visuel">
+                    <iframe
+                        src="https://www.youtube.com/embed/2a0QqgBkG9o?loop=1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; loop"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="description">
+                    <p>Projet de programmation C en duo réalisé en première année à l'IMAC.</p>
+                    <p>But du jeu : Posséder plus de pions de sa couleur en fin de partie.</p>
+                    <p>Fin du jeu : Aucun coup légal n’est possible de la part des deux joueurs. Cela intervient généralement lorsque les 64 cases sont occupées.</p>
+                </p></div>
+            </div>
+            <div class="item">
+                <a
+                href="https://gitlab.com/candicebranchereau/reversi"
+                target="_blank"
+                >
+                <div class="polaroid">
+                    <div class="image">
+                        <div>
+                            <h3>Date</h3>
+                            <p>2021 - IMAC 1</p>
+                        </div>
+                        <div>
+                            <h3>Rôle et domaine</h3>
+                            <p>Développement | Gestion de projet</p>
+                        </div>
+                        <div>
+                            <h3>Outils et compétences</h3>
+                            <p>C | Git | Collaboration</p>
+                        </div>
+                    </div>
+                    <div class="caption">Voir le projet</div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

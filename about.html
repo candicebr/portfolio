@@ -14,94 +14,75 @@
     />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+
 
     <link rel="icon" href="logo.ico" />
   </head>
 
   <body>
     <header>
-      <a id="titre" href="index.html">
-        <h1
-          class="titre mt-0 text-center text-3xl md:text-4xl font-semibold text-black hover:text-gray-700 duration-500"
-        >
-          Candice BRANCHEREAU
-        </h1></a
-      >
-      <nav class="menu h-12 border-b-4 border-double border-black">
-        <ul
-          class="flex flex-row justify-center text-xl md:text-2xl items-end mt-2"
-        >
-          <li class="nav_li mt-4 md:mt-3">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-
-              href="works.html"
-              >Projets</a
-            >
-          </li>
-          <li class="nav_li">
-            <a
-              class="rounded-lg rounded-b-none border-t-4 border-l-4 border-r-4 border-double border-black bg-white mx-2 md:mx-4 px-5 py-1 hover:text-white hover:bg-black duration-700"
-
-              href="about.html"
-              >A propos</a
-            >
-          </li>
-        </ul>
+      <div class="head-title">
+        <a href="index.html">
+          <img src="css/image/logo.png">
+        </a>
+        <a href="index.html">
+          <h1>Candice Branchereau</h1>
+        </a>
+        
+      </div>
+      <nav class="navigation" id="navigation">
+        <div class="container">
+          <ul class="navigation-links">
+          </ul>
+          <ul class="navigation-links">
+            <li><a href="works.html">Projets</a></li>
+            <li class="active"><a href="about.html">A propos</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div
-        class="profil flex md:flex-row flex-col justify-between lg:px-32 mt-6 md:-mt-10 items-center"
-      >
-        <div class="md:mx-6 lg:mr-24 px-10">
-          <img class="photo" src="css/image/profil.png" alt="profil" />
-          <p class="ecriture" id="post">
-            Informatique Graphique
-          </p>
+      <div class="nav-space"></div>
 
-        </div>
+      <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+      
+        <div class="profil">
+          <div class="item">
+            <div class="polaroid">
+              <div class="image"></div>
+              <div class="caption">Ecole Ingénieur IMAC</div>
+            </div>
+          </div>
 
-        <div
-          class="presentation mt-10 lg:mt-32 pt-6 md:pt-12 md:mx-6 lg:ml-24 px-10"
-        >
-          <p class="text-justify text-white text-md md:text-lg md:pb-6">
+          <div class="info">
+            <p class="text-md md:text-lg md:pb-6">
 
-            Actuellement étudiante en informatique graphique, tout ce qui touche
-            à l'art et la création m'intéresse. Aussi, j'essaye de découvrir le
-            plus de domaine d'art possible. J'aime allier les technologies à
-            cette création. Le monde de la 3D et du web permet alors de créer un
-            projet, de A à Z, en passant à la fois par la programmation et l'art
-            visuel.
-          </p>
-          <div class="text-center text-lg md:text-xl mt-12 lg:mt-32">
-            <p>Si vous voulez en savoir plus, téléchargez mon CV :</p>
-            <a href="CV_BRANCHEREAU_Candice.pdf" target="_blank"
-              ><button
-                class="text-lg md:text-xl mt-2 md:m-4 rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+              Actuellement étudiante en école d'ingénieur dite créative, tout ce qui touche
+              à l'art et la création m'intéresse. Aussi, j'essaye de découvrir le
+              plus de domaine d'art possible. J'aime allier les technologies à
+              cette création. Le monde de la 3D et du web permet alors de créer un
+              projet, de A à Z, en passant à la fois par la programmation et l'art
+              visuel.
+            </p>
+            <div class="text-center text-lg md:text-xl">
+              <a href="CV_CandiceBranchereau.pdf" target="_blank"
+                ><button
+                  class="text-lg md:text-xl rounded-lg px-4 py-2 text-white hover:bg-white hover:text-black border-2 border-transparent duration-500"
+                >
+                  Télécharger mon CV
+                </button></a
               >
-                Télécharger mon CV
-              </button></a
-            >
+            </div>
           </div>
         </div>
       </div>
     </main>
-
-    <footer
-      class="absolute w-full mt-12 md:mt-16 pt-2 h-16 md:h-12 text-md md:text-lg text-center"
-    >
-      <section class="top-footer">
-        07-81-93-36-23 -
-        <a
-          class="font-semibold hover:text-white duration-500"
-          href="https://www.pinterest.fr/candicebrancher/own-creation/"
-          target="_blank"
-          >Pinterest</a
-        >
-        - candicebranchereau@gmail.com
-      </section>
-    </footer>
   </body>
 </html>

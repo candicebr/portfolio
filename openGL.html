@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/polaroid.css" />
+    <link rel="stylesheet" type="text/css" href="css/info.css" />
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+
+    <link rel="icon" href="logo.ico" />
+  </head>
+
+  <body>
+    <header>
+        <div class="head-title">
+          <a href="index.html">
+            <img src="css/image/logo.png">
+          </a>
+          <a href="index.html">
+            <h1>Candice Branchereau</h1>
+          </a>
+          
+        </div>
+        <nav class="navigation" id="navigation">
+          <div class="container">
+            <ul class="navigation-links">
+                <a href="works.html"><li class="active"><</li></a>
+            </ul>
+            <ul class="navigation-links">
+              <li><a href="works.html">Projets</a></li>
+              <li><a href="about.html">A propos</a></li>
+              <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+      <div class="nav-space"></div>
+
+        <div id="section" class="section"><div class = "background"></div><div class = "background2"></div>
+
+        <div class="projet">
+            <div class="box">
+                <div id="openGL">
+                    <div>
+                        <img src="css/image/plim1.jpg">
+                        <img src="css/image/plim2.jpg">
+                    </div>
+                    <div id="LOD">
+                        <img src="css/image/plimLOD1.PNG">
+                        <img src="css/image/plimLOD2.PNG">
+                        <img src="css/image/plimLOD3.PNG">
+                        <img src="css/image/plimLOD4.PNG">
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Projet de retranscription d'une image en 3D (hauteur des reliefs en fonction de la couleur).</p>
+                    <p>Utilisation d'un quadTree pour stocker les points et faciliter l'implémentation du principe de LOD.</p>
+                    <p>Contraintes : Skybox, lumière et éléments aléatoires sur la carte.</p>
+                </div>
+                </div>
+            <div class="item">
+                <a
+                href="https://gitlab.com/candicebranchereau/visuterrimac"
+                target="_blank"
+                >
+                <div class="polaroid">
+                    <div class="image">
+                        <div>
+                            <h3>Date</h3>
+                            <p>2021 - IMAC 1</p>
+                        </div>
+                        <div>
+                            <h3>Rôle et domaine</h3>
+                            <p>Développement</p>
+                        </div>
+                        <div>
+                            <h3>Outils et compétences</h3>
+                            <p>OpenGL | C | SDL | QuadTree</p>
+                        </div>
+                    </div>
+                    <div class="caption">Voir le projet</div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

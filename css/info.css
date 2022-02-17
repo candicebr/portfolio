@@ -1,0 +1,161 @@
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.projet {
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -360px;
+}
+
+@media only screen and (max-width: 600px) {
+    .projet {
+      flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+    .visuel iframe {
+        width: 360px;
+        height: 225px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .box {
+        width: 60%;
+    }
+    .projet {
+        padding: 2rem 4rem 2rem 4rem;
+    }
+    .visuel iframe {
+        width: 720px;
+        height: 450px;
+    }
+}
+
+.section .background {
+    height: 250px;
+    background-color: #EE7674;
+    margin-top: 8%;
+}
+
+.section .background2 {
+    background-color: #FDCFB7;
+    height: 30px;
+}
+
+.visuel {
+    display: flex;
+    justify-content: space-between;
+}
+.visuel iframe {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+.visuel img {
+    max-width: 30%;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+.description {
+    margin-top: 20px;
+    font-family: "Spartan", cursive;
+    font-size: medium;
+    color: rgb(100, 100, 100);
+}
+
+.item {
+    width: 100%;
+    min-width: 350px;
+    max-width: 450px;
+    height: 450px;
+}
+
+.image {
+    max-width: 400px;
+    min-height: 400px;
+    padding: 1.5rem;
+    color: white;
+}
+
+.image div {
+    margin-bottom: 1rem;
+}
+
+.image p {
+    font-size: large;
+    font-family: "Spartan", cursive;
+}
+
+.image h3 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.bouton_projet {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #recoding h2{
+        display: none;
+    }
+    #recoding, #openGL{
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+    .visuel{
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    #recoding{
+        margin-top: 1rem;
+    }
+}
+
+#recoding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Spartan", cursive;
+
+    padding: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+#recoding div{
+    margin-bottom: 0;
+}
+
+#recoding img {
+    width: 265px;
+}
+
+#recoding h2{
+    color: rgb(139, 139, 139);
+    padding: 4px;
+}
+
+#openGL div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+#openGL img{
+    width: 49%;
+}
+
+#LOD img{
+    width: 23%;
+}

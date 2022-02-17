@@ -1,0 +1,70 @@
+.section .background {
+    height: 250px;
+    background-color: #EE7674;
+    margin-top: 12%;
+}
+
+.section .background2 {
+    background-color: #FDCFB7;
+    height: 30px;
+}
+
+.index h1 {
+    font-size: 3rem;
+    color:black;
+}
+
+.index .polaroid:hover {
+    cursor: default;
+}
+
+.index .item{
+    min-width: 300px;
+}
+
+.index .image{
+    max-height: 300px;
+}
+
+.index .polaroid img{
+    position: relative;
+    top: -110px;
+    left: -110px;
+}
+
+.index {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem 0 10rem;
+    align-items: center;
+    margin-top: -350px;
+}
+
+.index .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 900px){
+    .index {
+      flex-direction: row;
+      margin-top: -450px;
+    }
+    .index h1{
+        color:white;
+    }
+    .index .info{
+        margin-top: 250px;
+        width: 50%;
+        height: 350px;
+    }
+    .index .item{
+        width: 500px;
+    }
+    .index .image{
+        max-height: 450px;
+    }
+}

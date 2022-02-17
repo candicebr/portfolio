@@ -3,19 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
-@import url("http://fr.allfont.net/allfont.css?fonts=freestyle-script-normal");
-
-/*
-@font-face {
-  font-family: "Freestyle Script Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Freestyle Script Regular"), url("FREESCPT.woff") format("woff");
-}*/
 
 /*menu*/
 h1.titre {
-  font-family: "Amatic SC", cursive;
   background: #d0d6b5;
 }
 
@@ -31,35 +21,7 @@ header {
   font-family: "Spartan", cursive;
 }
 
-/*index*/
-
-h1.nom {
-  font-family: "Amatic SC", cursive;
-}
-
 /*a propos*/
-
-.index {
-  background: repeat-x center url("image/fond.png");
-}
-
-.profil {
-  background: none;
-}
-
-.presentation {
-  background: repeat-x top url("image/fond.png");
-}
-
-@media (min-width: 768px) {
-  .presentation {
-    background: none;
-  }
-
-  .profil {
-    background: repeat-x center url("image/fond.png");
-  }
-}
 
 
 .photo {
@@ -87,18 +49,6 @@ footer {
   color: #867298;
 }
 
-.ecriture {
-  font-size: 130%;
-  margin-top: -24%;
-  text-align: center;
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-}
-
-.ecriture#post {
-  font-size: 200%;
-}
-
 .container1-1 {
   background: none;
 }
@@ -108,29 +58,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .ecriture {
-    font-family: "Freestyle Script Regular", cursive;
-    font-size: 200%;
-    margin-top: -23.5%;
-    text-align: center;
-    font-weight: normal;
-  }
 
-  .ecriture#post {
-    font-size: 250%;
-  }
-
-  .container1-1 {
-    background: repeat-x center url("image/fond_violet.png");
-  }
-
-  .container2 {
-    background: repeat-x bottom url("image/fond.png");
-  }
-}
-
-.caption-container {
-  font-family: "Freestyle Script Regular", cursive;
 }
 
 #caption_var {
