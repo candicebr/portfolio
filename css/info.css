@@ -7,13 +7,13 @@ body {
     padding: 2rem 4rem 2rem 4rem;
     display: flex;
     justify-content: space-between;
-    margin-top: -300px;
+    margin-top: -360px;
 }
 
 .section .background {
-    height: 200px;
+    height: 250px;
     background-color: #EE7674;
-    margin-top: 6%;
+    margin-top: 8%;
 }
 
 .section .background2 {
@@ -23,9 +23,7 @@ body {
 .box {
     width: 60%;
 }
-.box div{
-    margin-bottom: 2rem;
-}
+
 .visuel {
     display: flex;
     justify-content: space-between;
