@@ -24,11 +24,14 @@ body {
     width: 60%;
 }
 .box div{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .visuel {
     display: flex;
     justify-content: space-between;
+}
+.visuel iframe {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
 }
 .visuel img {
     max-width: 30%;
@@ -71,16 +74,24 @@ body {
     text-align: center;
 }
 
-#recoding {
+#recoding{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: "Spartan", cursive;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+
+    padding: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+#recoding div{
+    margin-bottom: 0;
 }
 
 #recoding img {
-    width: 270px;
+    width: 265px;
 }
 
 #recoding h2{
@@ -88,4 +99,18 @@ body {
     padding: 4px;
 }
 
+#openGL div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
 
+#openGL img{
+    width: 49%;
+}
+
+#LOD img{
+    width: 23%;
+}

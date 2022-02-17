@@ -62,6 +62,9 @@
 .polaroid:hover {
   cursor: pointer;
 }
+#unity:hover {
+  cursor: default;
+}
 .polaroid .image{
     max-width: 100%;
     height: auto;
