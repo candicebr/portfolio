@@ -10,12 +10,13 @@
 }
 
 .profil .item{
-    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .profil .image{
-    min-width: 400px;
-    height: 400px;
+    max-height: 400px;
+    min-height: 300px;
 }
 
 .profil .polaroid:hover {
@@ -24,24 +25,44 @@
 
 .profil p{
     font-family: "Spartan", cursive;
-    color: white;
+    color: black;
     text-justify: auto;
 }
 
 .profil {
     text-align: center;
-    margin-top: -480px;
+    margin-top: -380px;
     display: flex;
     justify-content: space-between;
-    padding: 0 10rem 0 10rem;
+    flex-direction: column;
     align-items: center;
+    padding: 0 1rem 0 1rem;
 }
 
 .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 250px;
-    height: 350px;
-    width: 50%;
+}
+
+@media only screen and (min-width: 900px){
+    .profil {
+      flex-direction: row;
+      margin-top: -450px;
+      padding: 0 10rem 0 10rem;
+    }
+    .profil p{
+        color:white;
+    }
+    .profil .info{
+        width: 50%;
+        margin-top: 200px;
+        height: 350px;
+    }
+    .profil .item{
+        width: 500px;
+    }
+    .profil .image{
+        max-height: 450px;
+    }
 }

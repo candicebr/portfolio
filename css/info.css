@@ -4,10 +4,38 @@ body {
 }
 
 .projet {
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: -360px;
+}
+
+@media only screen and (max-width: 600px) {
+    .projet {
+      flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+    .visuel iframe {
+        width: 360px;
+        height: 225px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .box {
+        width: 60%;
+    }
+    .projet {
+        padding: 2rem 4rem 2rem 4rem;
+    }
+    .visuel iframe {
+        width: 720px;
+        height: 450px;
+    }
 }
 
 .section .background {
@@ -19,9 +47,6 @@ body {
 .section .background2 {
     background-color: #FDCFB7;
     height: 30px;
-}
-.box {
-    width: 60%;
 }
 
 .visuel {
@@ -43,7 +68,9 @@ body {
 }
 
 .item {
-    width: 450px;
+    width: 100%;
+    min-width: 350px;
+    max-width: 450px;
     height: 450px;
 }
 
@@ -72,12 +99,32 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    #recoding h2{
+        display: none;
+    }
+    #recoding, #openGL{
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+    .visuel{
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    #recoding{
+        margin-top: 1rem;
+    }
+}
+
 #recoding{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Spartan", cursive;
-    margin-top: 1rem;
 
     padding: 12px;
     background-color: white;

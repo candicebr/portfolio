@@ -11,7 +11,7 @@
 
 .index h1 {
     font-size: 3rem;
-    color:white;
+    color:black;
 }
 
 .index .polaroid:hover {
@@ -19,11 +19,11 @@
 }
 
 .index .item{
-    width: 500px;
+    min-width: 300px;
 }
 
 .index .image{
-    height: 450px;
+    max-height: 300px;
 }
 
 .index .polaroid img{
@@ -34,18 +34,37 @@
 
 .index {
     text-align: center;
-    margin-top: -450px;
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
     padding: 0 10rem 0 10rem;
     align-items: center;
+    margin-top: -350px;
 }
 
 .index .info {
-    margin-top: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 350px;
-    width: 50%;
+}
+
+@media only screen and (min-width: 900px){
+    .index {
+      flex-direction: row;
+      margin-top: -450px;
+    }
+    .index h1{
+        color:white;
+    }
+    .index .info{
+        margin-top: 250px;
+        width: 50%;
+        height: 350px;
+    }
+    .index .item{
+        width: 500px;
+    }
+    .index .image{
+        max-height: 450px;
+    }
 }
