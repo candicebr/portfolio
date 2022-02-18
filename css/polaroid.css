@@ -94,6 +94,12 @@
   min-width: 200px;
 }
 @media only screen and (max-width: 600px) {
+  .section h1 {
+    font-size: 6rem;
+  }
+  .section .background {
+      margin-top: -40px;
+  }
   .item {
     margin-left: -12px;
     margin-right: -12px
@@ -115,6 +121,7 @@
     padding: 0 2rem;
   }
 }
+
 #section4 .item {
     width: 18%;
 }

@@ -24,7 +24,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 1200px)
 {
     .box {
         width: 60%;
@@ -113,7 +113,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 1200px)
 {
     #recoding{
         margin-top: 1rem;
