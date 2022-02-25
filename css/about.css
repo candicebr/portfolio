@@ -19,10 +19,6 @@
     min-height: 300px;
 }
 
-.profil .polaroid:hover {
-    cursor: default;
-}
-
 .profil p{
     font-family: "Spartan", cursive;
     color: black;
