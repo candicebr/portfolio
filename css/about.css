@@ -14,11 +14,6 @@
     max-width: 400px;
 }
 
-.profil .image{
-    max-height: 400px;
-    min-height: 300px;
-}
-
 .profil p{
     font-family: "Spartan", cursive;
     color: black;
@@ -41,6 +36,11 @@
     justify-content: space-between;
 }
 
+.profil p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 @media only screen and (min-width: 1200px){
     .profil {
       flex-direction: row;
@@ -49,6 +49,7 @@
     }
     .profil p{
         color:white;
+        margin: 0;
     }
     .profil .info{
         width: 50%;
